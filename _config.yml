@@ -1,4 +1,4 @@
-title: Init Cyber
+title: Justin Johnson
 subtitle: Information Systems Security Engineer
 description: >- # this means to ignore newlines until "baseurl:"
   I am an enthusiastic Information Systems Security Engineer/Cybersecurity Engineer.
@@ -27,9 +27,9 @@ urls:
 author_logo: profile.png
 author: Justin Johnson
 author_bio: Hi, my name is Justin Johnson. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
-author_location: India
-author_website_url: "https://sujaykundu.com"
+author_email: "justin@initcyber.com"
+author_location: Atlanta, GA
+author_website_url: "https://www.initcyber.com"
 typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
@@ -83,8 +83,8 @@ author_project_details:
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  sujaykundu777
+twitter_username: initcyberdotcom
+github_username:  initcyber
 facebook_username: johndoe
 linkedin_username: johndoe
 behance_username: johndoe
