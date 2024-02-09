@@ -62,24 +62,24 @@ author_education_details:
                 college_degree: Cybersecurity/Information Technology
                 description: Bachelor of Science
                 visibility: true
-              - college_logo: fsu.jpg
+              - college_logo: fsu.png 
                 college_name: Florida State University
-                college_url: https://csuglobal.edu/
+                college_url: https://fsu.edu
                 college_degree: Criminology
                 description: Bachelor of Science
                 visibility: true
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: github.jpg
+                project_title: Homelab DevSecOps
+                project_description: Homelab DevSecOp is a project I'm working on for Homelab automation of programs (CI/CD), and incorporating security tools for a mock "DevSecOp" environment.
+                project_url: https://github.com/initcyber/homelab_devsecop
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: apister.PNG
+                project_title: APIster
+                project_description: WIP - APIster is designed to scrape a given URL/IP-Address for any open (possibly undocumented) API's, and provide feedback on data obtained
+                project_url: https://github.com/initcyber/APIster
                 visibility: true
 
 # social links
