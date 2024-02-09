@@ -4,7 +4,7 @@ title: "ELK Stack Introduction"
 summary: "Learn what the ELK stack is about"
 author: initcyber
 date: '2023-11-21 18:30:23 +0530'
-category: ['jekyll','guides', 'sample_category']
+category: ['Intro','ELK', 'SIEM']
 tags: jekyll
 thumbnail: /assets/img/posts/2023-11-21/thumbnail.png
 keywords: ELK, Elastic, SIEM, Logging, Cybersecurity, Intro

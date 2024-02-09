@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "How to learn linux"
-summary: "How to learn linux"
+summary: "The rising popularity of this Operating System"
 author: initcyber
-date: '2023-11-14 14:35:23 +0530'
-category: jekyll
+date: '2023-11-14 21:35:23 +0530'
+category: Linux
 thumbnail: /assets/img/posts/code.jpg
 keywords: youtube, learn linux, linux, cybersecurity
 permalink: /blog/how-to-learn-linux/
@@ -12,7 +12,6 @@ usemathjax: true
 imgdate: 2023-11-14
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/9RHXoe2uSDY?si=wEddK3KQrKEdUj7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 

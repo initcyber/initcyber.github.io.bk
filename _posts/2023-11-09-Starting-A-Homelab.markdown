@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Starting a Homelab"
+summary: "Why a homelab is critical to your success"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2023-11-09 22:35:23 +0530'
+category: homelab
+thumbnail: /assets/img/posts/2023-11-09/1.jpg
+keywords: homelab
+permalink: /blog/starting-a-homelab/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-11-09
 ---
 
-<iframe width="420" height="315" src="https://youtu.be/nHm4HEsCSsg?si=WxyBTVYHhFSmus4E" frameborder="0" allowfullscreen></iframe>
-Video here: https://youtu.be/nHm4HEsCSsg?si=WxyBTVYHhFSmus4E
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/nHm4HEsCSsg?si=BhKUWnn89Vn5GERC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+Video [here](https://youtu.be/nHm4HEsCSsg?si=WxyBTVYHhFSmus4E)
 
 Cybersecurity is a fascinating and rewarding field, but it also requires a lot of hands-on practice and experimentation. That’s why many aspiring and experienced cybersecurity professionals, such as myself, set up their own homelabs, where they can test and learn new skills in a safe and controlled environment.
 
@@ -24,7 +24,7 @@ The Hardware
 
 When I first started my career in Information Technology, I immediately created my own omhelab which consisted of older enterprise servers and workstations. These devices were noisy, loud, and at times you couldn’t sit comfortably in the same room without going absolutely crazy from the noise… Since my first iteration of my homelab, (Photo below) I have rebuilt it several times, with different sets of hardware and software, testing out everything I could possible.
 
-![My First Homelab](:/2023=11=-0/1.jpg){:data-align="center"}
+![My First Homelab](:/2023-11-09/1.jpg){:data-align="center"}
 
 In my latest version of my homelab, I kept the mindset of having a limited budget and space. I didn’t want to once again, spend a fortune on fancy servers or rack cabinets, nor did I want to deal with the noise and heat that they generate.
 I opted for some affordable and compact solutions that still met my needs, with the mindset that I would be later connecting this to my public cloud instance in the future. These options are not only budget friendly, but also provide adequate power to run most of the common software found today, such as different hypervisors, vulnerabilities scanning software, logging and SIEM tools, an integrated NAS, and more.

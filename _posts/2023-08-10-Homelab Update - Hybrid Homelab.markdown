@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Homelab Update - Hybrid Homelab"
+summary: "Unless you have been living under a rock, you know that the Cloud is one of the biggest things in IT, and if you aren't already learning, working, or developing yourself in a cloud-based environment, you are not only missing out, you are doing yourself a disservice."
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2023-08-10 14:35:23 +0530'
+category: homelab
+thumbnail: /assets/img/posts/2023-08-10/1.png
+keywords: HomelabUpdate, Hybrid, Cloud
+permalink: /blog/Homelab-Update-Hybrid-Homelab/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-08-10
 ---
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+
 
 ### Preface:
 Unless you have been living under a rock, you know that the Cloud is one of the biggest things in IT, and if you aren't already learning, working, or developing yourself in a cloud-based environment, you are not only missing out, you are doing yourself a disservice. (I can hear some of you guys now: 'Justin, the cloud is really just someone elses computers' .... Yes, yes I know). The associated cost with running a homelab in the cloud, especially to any sort of extent, can be a deterring factor for most, however Oracle provides (at the time of this writing) free cloud instances, as long as you remain within the free tier. Best of all, you can connect this instance to your home environment and pass services back and forth, creating a hybrid environment - where you would have on-premise devices connected to the cloud (not to be confused with Azure Hybrid AD, or a Hybrid Cloud model which would combine Public and Private cloud). 

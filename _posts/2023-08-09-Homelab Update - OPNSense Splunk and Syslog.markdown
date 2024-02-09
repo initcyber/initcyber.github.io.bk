@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Homelab Update - OPNSense Splunk and Syslog"
+summary: "As part of the Homelab revamp, I decided it best to completely blow away all of the VM's and start fresh. "
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2023-08-09 14:35:23 +0530'
+category: Homelab
+thumbnail: /assets/img/posts/2023-08-09/1.jpg
+keywords: HomelabUpdate, OPNSense, Syslog
+permalink: /blog/homelab-update-opnsense-splunk-syslog/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-08-09
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
