@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cybersecurity First"
-summary: "Learn how to add categories in posts"
+summary: "Welcome to my website"
 author: initcyber
 date: '2022-06-29 1:35:23 +0530'
 category: ['first-post']
@@ -9,7 +9,7 @@ tags: firstpost
 thumbnail: /assets/img/authors/profile.png
 keywords: welcome, cybersecurity
 usemathjax: false
-permalink: /blog/adding-categories-tags-in-posts/
+permalink: /blog/firstpost/
 imgdate: 2022-06-29
 ---
 

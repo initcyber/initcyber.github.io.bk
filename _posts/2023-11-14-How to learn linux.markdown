@@ -14,7 +14,7 @@ imgdate: 2023-11-14
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-<iframe width="420" height="315" src="https://youtu.be/9RHXoe2uSDY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9RHXoe2uSDY?si=wEddK3KQrKEdUj7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Video here: https://youtu.be/9RHXoe2uSDY
 
