@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Cybersecurity First"
-summary: "Learn how to add categories in posts"
+title: "ELK Stack Introduction"
+summary: "Learn what the ELK stack is about"
 author: initcyber
-date: '2022-06-29 1:35:23 +0530'
+date: '2023-11-21 18:30:23 +0530'
 category: ['jekyll','guides', 'sample_category']
 tags: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: welcome, cybersecurity
+thumbnail: /assets/img/posts/2023-11-21/thumbnail.png
+keywords: ELK, Elastic, SIEM, Logging, Cybersecurity, Intro
 usemathjax: false
-permalink: /blog/adding-categories-tags-in-posts/
+permalink: /blog/elk-stack-intro/
 imgdate: 2023-11-21
 ---
 
-<iframe width="420" height="315" src="https://youtu.be/olna19zwtoE?si=K-PJgKt6HW8Q0HJ_" frameborder="0" allowfullscreen></iframe>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/olna19zwtoE?si=1Z6Yn6RU3mVl866V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 Video Here: https://youtu.be/olna19zwtoE?si=K-PJgKt6HW8Q0HJ_
 
 The Elastic Stack, also known as the ELK Stack is a powerful platform for data analysis and visualization that consists of three different tools: Elasticsearch, Logstash, and Kibana. A fourth tool, Beats, is commonly used to take data from various sources and send them to the stack. These tools work together to collect, process, and display data from various sources, such as logs, metrics, events, and more.

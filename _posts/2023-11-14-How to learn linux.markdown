@@ -14,13 +14,13 @@ imgdate: 2023-11-14
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9RHXoe2uSDY?si=wEddK3KQrKEdUj7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/9RHXoe2uSDY?si=wEddK3KQrKEdUj7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
-Video here: https://youtu.be/9RHXoe2uSDY
+Video [here](https://youtu.be/9RHXoe2uSDY).
 
 In today’s world, you may interact with Linux and not even know it. From common computer users to IT Security Personnel, Linux is continuing to grow and become more prevalent between work and home. However, Linux is not just an operating system, it’s a skill that can boost your career and income. Linux is the preferred platform for cybersecurity professionals, and knowing not only what it is, but how to use it, can give you the competitive edge in the job market.
 
-The best way to get into Linux is to install it as your main operating system, try it out for 30 days. Chris Titus has a video “The first 30 days in Linux” (https://www.youtube.com/watch?v=wioCLsyUZLA) which inspired me to restart down the Linux journey. I used it prior to starting my IT career, but was never serious.
+The best way to get into Linux is to install it as your main operating system, try it out for 30 days. Chris Titus has a video [“The first 30 days in Linux”](https://www.youtube.com/watch?v=wioCLsyUZLA) which inspired me to restart down the Linux journey. I used it prior to starting my IT career, but was never serious.
 
 Self-hosting web servers, file servers and VPN’s is another solution to learning Linux, as long as you utilize Linux as the base operating system to better understand how to install the programs on top of it.
 
