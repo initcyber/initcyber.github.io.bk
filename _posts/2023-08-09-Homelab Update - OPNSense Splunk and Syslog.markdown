@@ -12,8 +12,6 @@ usemathjax: true
 imgdate: 2023-08-09
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
-
 ### Preface:
 As part of the Homelab revamp, I decided it best to completely blow away all of the VM's and start fresh. This also included starting fresh with the Firewall/Router (Switching from pfSense to OPNSense) and documenting everything from day 1. The only thing which remains is the NAS (OpenMediaVault) and it's Docker setup, and that is because it's still serving a purpose as the home's "core" NAS and media server. Even the hypervisor it was running on was updated, and the drives which used to be passthrough via RDM were changed, however the data and OS remained. (Side note: While RDM works, my motherboard has 10 SATA ports which has two controllers that I can passthrough individually with some simple modifications to the ESXI passthru config, and is much simpler/cleaner IMO - i.e. I can change the PCI passthrough at a wim via GUI vs having to remap the RDM via CLI). 
 
@@ -28,7 +26,7 @@ I freaking love Splunk (and I am studying for Splunk Certs, I currently use it a
 
 This time I've set it up to have a "Hot" storage and a "Cold" storage using "Magic"
 
-![Magic](:/{{page.imgdate}}/2.jpg){:data-align="center"}
+![Magic](/assets/img/posts/{{page.imgdate}}/2.jpg){:data-align="center"}
 
 Ok, it's not magic, but this time I decided it best to reinstall RHEL8 using CIS Benchmarks Level 1 Server for hardening (RHEL does this easily during the initial install, just separate the /home, /tmp, and /var/tmp onto sep partitions if memory serves right). I also added a 500 GB storage from one of the HDD's on one of the nodes in order to store "cold" log files (after 30 days) and keeping "hot" files on a separate 20GB partition. These have been mounted on /mnt/splunk (hot) and /mnt/splunk/cold (cold) in a nested fashion, which makes it easier in the Splunk GUI to assign hot/cold DB's. The Splunk Config has also been modified to default to these directories, CHMOD splunk:splunk on the appropriate folders, formatted, etc (not necessarily in that order).
 

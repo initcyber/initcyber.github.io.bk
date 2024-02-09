@@ -5,7 +5,7 @@ summary: "The rising popularity of this Operating System"
 author: initcyber
 date: '2023-11-14 21:35:23 +0530'
 category: Linux
-thumbnail: /assets/img/posts/code.jpg
+thumbnail: /assets/img/authors/profile.png
 keywords: youtube, learn linux, linux, cybersecurity
 permalink: /blog/how-to-learn-linux/
 usemathjax: true
