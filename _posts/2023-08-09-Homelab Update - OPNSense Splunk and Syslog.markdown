@@ -5,7 +5,7 @@ summary: "As part of the Homelab revamp, I decided it best to completely blow aw
 author: initcyber
 date: '2023-08-09 14:35:23 +0530'
 category: Homelab
-thumbnail: /assets/img/posts/2023-08-09/1.jpg
+thumbnail: /assets/img/posts/2023-08-09/feat-1.jpg
 keywords: HomelabUpdate, OPNSense, Syslog
 permalink: /blog/homelab-update-opnsense-splunk-syslog/
 usemathjax: true
@@ -14,7 +14,6 @@ imgdate: 2023-08-09
 
 ### Preface:
 As part of the Homelab revamp, I decided it best to completely blow away all of the VM's and start fresh. This also included starting fresh with the Firewall/Router (Switching from pfSense to OPNSense) and documenting everything from day 1. The only thing which remains is the NAS (OpenMediaVault) and it's Docker setup, and that is because it's still serving a purpose as the home's "core" NAS and media server. Even the hypervisor it was running on was updated, and the drives which used to be passthrough via RDM were changed, however the data and OS remained. (Side note: While RDM works, my motherboard has 10 SATA ports which has two controllers that I can passthrough individually with some simple modifications to the ESXI passthru config, and is much simpler/cleaner IMO - i.e. I can change the PCI passthrough at a wim via GUI vs having to remap the RDM via CLI). 
-
 
 
 ![New Homelab, who dis?](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
