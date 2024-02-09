@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Central Logging Server - Splunk Forwarder"
+summary: "Over-Engineering your Logging systems"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
+date: '2023-05-16 14:35:23 +0530'
+category: ['Splunk','SysLog', 'SIEM']
 thumbnail: /assets/img/posts/code.jpg
 keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
 permalink: /blog/welcome-to-devlopr-jekyll/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-05-16
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

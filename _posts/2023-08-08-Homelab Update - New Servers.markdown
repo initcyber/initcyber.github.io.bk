@@ -1,18 +1,16 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Homelab Update - New Servers"
+summary: "Over the past few months I've had a lot of different things happen, more namely moving different houses. Now I have a dedicated basement for the homelab (and coincidentally.... my office) and I also expanded a bit."
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2023-08-08 14:35:23 +0530'
+category: Homelab
+thumbnail: /assets/img/posts/2023-08-08/1.jpg
+keywords: Homelab, Update, New Servers
+permalink: /blog/Homelab-Update-New-Servers/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-08-08
 ---
-
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 ### Preface:
 Over the past few months I've had a lot of different things happen, more namely moving different houses. Now I have a dedicated basement for the homelab (and coincidentally.... my office) and I also expanded a bit.

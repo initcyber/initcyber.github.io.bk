@@ -6,7 +6,7 @@ author: initcyber
 date: '2023-11-21 18:30:23 +0530'
 category: ['Intro','ELK', 'SIEM']
 tags: jekyll
-thumbnail: /assets/img/posts/2023-11-21/thumbnail.png
+thumbnail: /assets/img/posts/2023-11-21/Thumbnail.png
 keywords: ELK, Elastic, SIEM, Logging, Cybersecurity, Intro
 usemathjax: false
 permalink: /blog/elk-stack-intro/

@@ -24,7 +24,7 @@ The Hardware
 
 When I first started my career in Information Technology, I immediately created my own omhelab which consisted of older enterprise servers and workstations. These devices were noisy, loud, and at times you couldn’t sit comfortably in the same room without going absolutely crazy from the noise… Since my first iteration of my homelab, (Photo below) I have rebuilt it several times, with different sets of hardware and software, testing out everything I could possible.
 
-![My First Homelab](:/2023-11-09/1.jpg){:data-align="center"}
+![My First Homelab](/assets/img/posts/{{page.imgdate}}/1.jpg){:data-align="center"}
 
 In my latest version of my homelab, I kept the mindset of having a limited budget and space. I didn’t want to once again, spend a fortune on fancy servers or rack cabinets, nor did I want to deal with the noise and heat that they generate.
 I opted for some affordable and compact solutions that still met my needs, with the mindset that I would be later connecting this to my public cloud instance in the future. These options are not only budget friendly, but also provide adequate power to run most of the common software found today, such as different hypervisors, vulnerabilities scanning software, logging and SIEM tools, an integrated NAS, and more.

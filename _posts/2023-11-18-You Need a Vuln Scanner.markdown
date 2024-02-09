@@ -25,14 +25,14 @@ At the bare minimum, companies such as [Tenable](https://www.tenable.com/), [Gre
 
 Using a vulnerability scanner provides a ton of insight of vulnerabilities and remediation’s to fix them. Below are some examples from Tenable Essentials (free for up to 16 IP’s).
 
-![Fairly Clean. This is a pfSense firewall on an internal network (not exposed to the outside world) that segregates my lab. DHCP Detection is expected. NTP is something I’m going to look into but I expect it to be a False Positive.](:/2023-11-18/2.png){:data-align="center"}
+![Fairly Clean. This is a pfSense firewall on an internal network (not exposed to the outside world) that segregates my lab. DHCP Detection is expected. NTP is something I’m going to look into but I expect it to be a False Positive.](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 When you click into each vulnerability you get detailed information regarding them, including the fix:
 
-![You can either click on the “see also” link, or look up the solution on your favorite search engine](:/2023-11-18/3.png){:data-align="center"}
+![You can either click on the “see also” link, or look up the solution on your favorite search engine](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 Just ensure that when you set up your vulnerability scanner, that you are getting good credentialed scans (for Tenable/Nessus/ACAS look at plugin 19506), otherwise you will receive incomplete results. The vulnerability scanners need to have credentialed and elevated privileges in order to understand the contents of each systems patch level, security posture, network settings, etc., (think of what an intruder/hacker would see if they got in) in order to tell you what to remediate/fix.
 
-![Bad Scan Here. Credentialed Checks : no on the bottom line. Plugin 19506 and several other informational plugins tell you a story about your system you are scanning.](:/2023-11-18/4.png){:data-align="center"}
+![Bad Scan Here. Credentialed Checks : no on the bottom line. Plugin 19506 and several other informational plugins tell you a story about your system you are scanning.](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Not only will this help you keep a better security posture for your network and internal infrastructure, in the future if you decide to step into the world of Information Technology/Cybersecurity this can be used as experience. In previous interviews, I’ve impressed recruiters/hiring managers by telling them “I run a #homelab with a vulnerability scanner in the middle scanning all of my network devices on a weekly basis”. That opens the door to further conversations where I can deep dive into what I’ve done and my experience in how I use this to ensure my network, devices, and computers are safe.
