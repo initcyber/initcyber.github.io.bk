@@ -18,7 +18,7 @@ Terraform (which will be discussed in greater detail in Part 2 of this mini-blog
 
 According to [Cloud Init](https://cloudinit.readthedocs.io/en/latest/)
 
-![Source: https://cloudinit.readthedocs.io/en/latest/](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Source: https://cloudinit.readthedocs.io/en/latest/](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Long story short – It automates the system configuration during the initial boot of the VM. A bunch of the major distributions come pre-packaged and ready for cloud-init. Lets set one up now for Ubuntu. The latest cloud-init ready image according to Ubuntu.com’s page is 22.04 (Jammy) – (https://cloud-images.ubuntu.com). On our Proxmox machine (ssh to it):
 
@@ -59,16 +59,16 @@ $ qm set 9999 --agent enabled=1
 $ qm template 9999
 ```
 Now lets check our Proxmox Gui:
-![A Template is born!](:/{{page.imgdate}}/3.png){:data-align="center"}
+![A Template is born!](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 So maybe you made it to this point and you are saying “Ok that’s cool, now what can you do with this template?”. Well you can do several things. You can use this as a quick way to deploy VM’s going forward (just adjust parameters) or for your Infrastructure as Code (Terraform), which is more precisely what I want to use it for. However, for funsies let’s try using this template without Terraform.
 
 From the GUI - Select More then "Clone":
 
-![From the Gui, select More then “Clone”](:/{{page.imgdate}}/4.png){:data-align="center"}
+![From the Gui, select More then “Clone”](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 Select Linked Clone for same storage or Full Clone to select different storage
-![Select Linked Clone for same storage or Full Clone to select different storage](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Select Linked Clone for same storage or Full Clone to select different storage](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 In the new VM, under cloud-init set your User and Password, and DNS settings/SSH keys if needed
-![In the new VM, under cloud-init set your User and Password, and DNS settings/SSH keys if needed](:/{{page.imgdate}}/6.png){:data-align="center"}
+![In the new VM, under cloud-init set your User and Password, and DNS settings/SSH keys if needed](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 Afterwards, click Start then you have a working Virtual Machine from your Cloud-init Clone. Really Fast VM startup and you don’t have to go through an ENTIRE INSTALL, this is absolutely insane!

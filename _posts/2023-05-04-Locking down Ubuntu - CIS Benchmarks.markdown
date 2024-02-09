@@ -26,15 +26,15 @@ So why should you learn CIS Benchmarks? Well if you are cybersecurity oriented, 
 #### CIS Workbench
 If you want to provide feedback on benchmarks and/or get insight to the CIS controls/benchmarks/updates as they happen, you will need to sign up for a CIS Workbench account at [https://workbench.cisecurity.org/registration](https://workbench.cisecurity.org/registration) Then you will need to join a community.
 
-![CIS Benchmarks Registration](:/{{page.imgdate}}/1.png){:data-align="center"}
-![CIS Workbench Dashboard](:/{{page.imgdate}}/2.png){:data-align="center"}
+![CIS Benchmarks Registration](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
+![CIS Workbench Dashboard](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Once you are logged in search for the community you want to join. This community is equivelant to the OS/device you are trying to harden, but also houses discussion groups, milestones, etc. Here you can view discussions, see the benchmarks, see open tickets, etc.
-![Ubuntu Linux Community](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Ubuntu Linux Community](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 On the left side, you can find Benchmarks, discussion board, files, etc. You will find benchmarks currently in development as well as ones that are published. 
 
-![Ubuntu Published Benchmark on Bottom](:/{{page.imgdate}}/4.png){:data-align="center"}
+![Ubuntu Published Benchmark on Bottom](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 #### Downloading Published Benchmarks without joining the Workbench
 
@@ -62,13 +62,13 @@ Download CIS-CAT Lite Here [https://learn.cisecurity.org/cis-cat-lite](https://l
 
 After you download it, extract it and run "Assessor-GUI" (assuming you are on a Windows-Based Machine)
 
-![CIS-CAT Lite Welcome Screen](:/{{page.imgdate}}/5.png){:data-align="center"}
+![CIS-CAT Lite Welcome Screen](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 From here select "Advanced" as we are going to scan a remote target, then "Add remote or local target system"
 
 Fill out all of the appropriate information, add your appropriate benchmark (in this case CIS Ubuntu Linux - Level 1 Server) then click "save"
 
-![Selecting Benchmark and Saving](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Selecting Benchmark and Saving](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 From here you want to test the connection to the target to ensure that you can, in fact, access to box.
 
@@ -76,18 +76,18 @@ Then click next.
 
 On the next screen select your destination folder for your HTML printout of benchmarks report. Remember where this output is so you can retrieve it later. Click "Next" and it will confirm that you want to run the assessment.
 
-![HTML Save location and confirmation to run the scan](:/{{page.imgdate}}/7.png){:data-align="center"}
+![HTML Save location and confirmation to run the scan](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 Give it a few moments (mine took less than 2 minutes) and it should be ready
-![Test completed](:/{{page.imgdate}}/8.png){:data-align="center"}
+![Test completed](/assets/img/posts/{{page.imgdate}}/8.png){:data-align="center"}
 
 #### CIS-CAT Results
-![Test Results](:/{{page.imgdate}}/9.png){:data-align="center"}
-![Test Results - Detailed](:/{{page.imgdate}}/10.png){:data-align="center"}
+![Test Results](/assets/img/posts/{{page.imgdate}}/9.png){:data-align="center"}
+![Test Results - Detailed](/assets/img/posts/{{page.imgdate}}/10.png){:data-align="center"}
 
 So here we can see the finalized results, both passed and failed. We can also filter down to "Display Only Failures" as well, which can help you determine what CIS controls need to be implemented on the system. If you click on each of the findings it will drill down further into the document and give you remediation steps on how to fix it. Lets try the first one, "1.1.1.1 - Ensure mounting of cramfs filesystems is disabled"
 
-![Test Results - Drilldown](:/{{page.imgdate}}/11.png){:data-align="center"}
+![Test Results - Drilldown](/assets/img/posts/{{page.imgdate}}/11.png){:data-align="center"}
 
 #### Remediation
 
@@ -107,17 +107,17 @@ and add the line:
 ```bash
 install cramfs /bin/true 
 ```
-![Adding new file and adding lines](:/{{page.imgdate}}/12.png){:data-align="center"}
+![Adding new file and adding lines](/assets/img/posts/{{page.imgdate}}/12.png){:data-align="center"}
 
 then run the command
 ```bash
 rmmod cramfs
 ```
-![Running rmmod cramfs - This ensures that the cramfs (if loaded) is unloaded](:/{{page.imgdate}}/13.png){:data-align="center"}
+![Running rmmod cramfs - This ensures that the cramfs (if loaded) is unloaded](/assets/img/posts/{{page.imgdate}}/13.png){:data-align="center"}
 
 #### Remediation Scan
 For brevity of this post, I'm going to go ahead and rescan this test system and show how I just remediated one finding (1.1.1.1):
-![New findings - 1.1.1.1 showed Pass](:/{{page.imgdate}}/14.png){:data-align="center"}
+![New findings - 1.1.1.1 showed Pass](/assets/img/posts/{{page.imgdate}}/14.png){:data-align="center"}
 
 If you look below there are "Manual" results. This indicates results that must be ran/tested manually (i.e. you have to do it by hand to test these controls). While tools such as CIS-CAT, SCC, Nessus, and the likes are great tools, some of the checks can't be ran due to how the controls are written/handled.
 
@@ -137,7 +137,7 @@ Once you go through all of these items (which really isnt a long time) you will 
 
 6 - Combining 4 and 5 above, if you want a GUI interface, and use Windows, you can use the [OpenSCAP Workbench](https://www.open-scap.org/tools/scap-workbench/). From there, you can install the Compliance as Code Repository on a linux OS (by source is best IMO) and visit the "../build" directory you make and find the SSG Data Stream xml files with the corresponding xccdf xml files. These files can be brought over to the Windows OpenSCAP Workbench and used to remotely scan your other boxes (I just did it for Ubuntu 22, when currently (date of this post) there isn't pre-loaded baseline-checks for Ubuntu 22 in the Workbench application - See photo below:
 
-![Ubuntu 22 CIS Benchmarks loaded in a Windows OpenSCAP Workbench](:/{{page.imgdate}}/15.png){:data-align="center"}
-![I've got some work to do](:/{{page.imgdate}}/16.png){:data-align="center"}
+![Ubuntu 22 CIS Benchmarks loaded in a Windows OpenSCAP Workbench](/assets/img/posts/{{page.imgdate}}/15.png){:data-align="center"}
+![I've got some work to do](/assets/img/posts/{{page.imgdate}}/16.png){:data-align="center"}
 
 However, I still much prefer using the Linux Variant...

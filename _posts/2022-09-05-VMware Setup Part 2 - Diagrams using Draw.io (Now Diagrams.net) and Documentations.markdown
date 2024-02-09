@@ -20,7 +20,7 @@ The easiest and most efficient way to start documenting your homelab/network is 
 
 ### Diagram
 
-![Diagram](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Diagram](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Drawing out your homelab in this way serves multiple purposes, for starters it gives you a clear understanding of how your network is laid out and where you can make improvements. Also (and this has been brought up in the past, at least in my experience), if someone (hint hint, a job recruiter, potential future employer) asks that important question of “Can you describe your home network”, you won’t stammer through it or state “Well I know I have a modem that my ISP gave me, a wireless router, and my computer”. NO! Tell that future employer all the cool things you have in your network.
 
@@ -28,13 +28,13 @@ So how is my home network laid out and how am I planning out my ESXI homelab? He
 
 *UPDATE 09/15/2022* - I do have vLAN's now and several network and firewall rules set up for my network as I finally figure out a way to use my measily 8 port switch in a meaningful way coupled with my wireless router (had to physically move it). It took some careful thought but I did manage to get 5 separate networks, one for trusted, one for work, one for the homelab, one for guest (only has 10 usuable IP addresses), and one for IOT/Media devices. Work, Guest and IOT are segregated off to only speak to the internet, with the exception of IOT being able to speak to the media server box ONLY and the internet. Homelab is allowed to only the internet and media device as well, but my trusted network is allowed in (only diff). Trusted network has full reign but can not talk to those in Guest, Work, or IOT (for now).
 
-![Home Network Diagram (Draft)](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Home Network Diagram (Draft)](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 Now what I don’t have listed in this diagram is my private IP ranges, and I plan on doing that in the near future, however I am still planning/documenting everything. What I do want to provide is some amazing Diagrams I did find and get some inspiration from over at r/homelab (or you can simply search “Diagrams” in that subreddit – or go here). These diagrams I believe are above and beyond and perfectly document their homelab, and even do so much better than some “professional” diagrams I’ve seen in the field:
 
-![Diagram](:/{{page.imgdate}}/4.png){:data-align="center"}
-![Diagram](:/{{page.imgdate}}/5.png){:data-align="center"}
-![Diagram](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Diagram](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
+![Diagram](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
+![Diagram](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 ### Documentation
 

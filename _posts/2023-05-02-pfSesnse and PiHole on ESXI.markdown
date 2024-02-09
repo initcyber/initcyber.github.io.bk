@@ -17,7 +17,7 @@ imgdate: 2023-11-21
 ### Preface:
 For those who utilize ESXI/vSphere and want to install pfSense and PiHole, it's not nearly as straight forward as the Proxmox install, however it may make more sense and be better for your environment depending on what is set up currently in your lab.
 
-![Tailscale Icon - Courtesy of Tailscale.com](:/{{page.imgdate}}/1.png){:data-align="center"}
+![Tailscale Icon - Courtesy of Tailscale.com](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 
 ### ESXI Install
@@ -37,13 +37,13 @@ Next is pfSense installation is also fairly straightforward. First lets set up o
 
 Under Networking -> Virtual Switches, add two switches, one for LAN and one for WAN. Ensure these are separate from your Management port (just like Proxmox, you will require 3 ethernet connections to your box). You may run into issues with only 2 or one without VLANS already set and/or understanding how to set up Router on a Stick.
 
-![Two Network Switches - LAN and WAN](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Two Network Switches - LAN and WAN](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Then set up Two Port Groups attached to each of the Network Switches you just created (1 for 1 - LAN Network to LAN Switch, WAN Network to WAN Switch).
 
 NOTE: If you are using VLANS and are trunking your VLANS down one port, set VLAN ID to 4095 on the LAN network:
 
-![Two Network Port Groups - LAN and WAN w/ 4095 VLAN](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Two Network Port Groups - LAN and WAN w/ 4095 VLAN](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 Now install pfSense, For SCSI Controller select LSI Logic Parallel for the hard drive(instead of default VMWare or else you won't be able to install pfSense), select FreeBSD 12, and select your two new network port groups.
 

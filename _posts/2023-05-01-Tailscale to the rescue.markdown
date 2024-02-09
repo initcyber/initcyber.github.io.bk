@@ -17,11 +17,11 @@ imgdate: 2023-11-21
 ### Preface:
 With the big push to Zero Trust, I am a big proponent of literally opening NO advertised ports to my home. You can use Cloudflare tunnels to open up services to your home which is one way (and in my opinion a great way) of self-hosting your services you feel you need to provide to the world, however what about VPN? Most would suggest OpenVPN, which in and of itself is great to use, but that still requires ports to be opened. Wireguard is another solution and is simple enough, but there is an even more simpler solution, one which can also be self hosted [Tailscale](https://tailscale.com/). It's one I use and in this blog post I'll show you how easy it is to set up a mesh-vpn for your network without opening any ports to your home router (cgnat is no longer a problem!) and utilize PiHole to have an always-on ad-blocking experience no matter where you are. (Bonus tip - If you self-host this in the cloud you can have better uptime if you have flaky internet and/or better uptime speeds for PiHole too)
 
-![Tailscale Icon - Courtesy of Tailscale.com](:/{{page.imgdate}}/1.png){:data-align="center"}
+![Tailscale Icon - Courtesy of Tailscale.com](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 ### What was I running before?
 Before, I was reliant on OpenVPN and opening the usual suspect port (1194). While this in and of itself isn't necessarily a security concern, I really don't want any services opened up on my firewall, I want it as locked down as Fort Knox...
-![Fort Knox - Image Courtesy of Wikipedia](:/{{page.imgdate}}/2.jpg){:data-align="center"}
+![Fort Knox - Image Courtesy of Wikipedia](/assets/img/posts/{{page.imgdate}}/2.jpg){:data-align="center"}
 
 Afterwards I was using Wireguard, which was simple to set up and easier to use than OpenVPN, and much faster. I used that for a while and loved it, but shortly after....
 
@@ -84,14 +84,14 @@ Add Tailscales Package Signing Key and Repo
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/jammy.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
 ```
-![Signing Key and Repository](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Signing Key and Repository](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 then 
 
 ```bash
 sudo apt update
 sudo apt install tailscale
 ```
-![Installing Tailscale using APT Package Manager (Note: No "sudo" here, I'm already root (I AM ROOT!)](:/{{page.imgdate}}/4.png){:data-align="center"}
+![Installing Tailscale using APT Package Manager (Note: No "sudo" here, I'm already root (I AM ROOT!)](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 In the install instructions it advises to go ahead and authenticate to your tailscale control plane, which is fine to test things out (and theres no issue with it to test it out for the first time), however I prefer to do things with as little command typing as possible:
 
@@ -101,7 +101,7 @@ echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
 echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
 sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 ```
-![IP Forwarding for Subnet Router/Exit Node](:/{{page.imgdate}}/5.png){:data-align="center"}
+![IP Forwarding for Subnet Router/Exit Node](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 Then lets start Tailscale and advertise our routes/exit node and also flag "accept-dns=false". This prevents pihole from trying to be its own upstream...
 ```bash
@@ -112,7 +112,7 @@ sudo tailscale up --advertise-routes=10.0.0.0/24,10.0.1.0/24 --advertise-exit-no
 _PLEASE NOTE:_ for your IP Addresses after "advertise-routes=", enter the subnet routes you want Tailscale to "advertise" to the control plane. These are the subnets for your network you want accessible.
 
 Once you "Tailscale up" it will ask you to Authenticate
-![Tailscale Up and Authentication login](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Tailscale Up and Authentication login](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 
 **BONUS TIP:** For the Free Version of Tailscale - They included a Subnet Router Failover, so if you have pfSense and Pihole installed in one box like I do, you can go ahead and advertise subnets on both "devices" (the same subnets) and in the event you need to take down the PiHole or it becomes unresponsive you can "failover" to the pfSense subnet and access your network. High Availability is endless here... (Source: [Subnet Router Failover](https://tailscale.com/kb/1115/subnet-failover/)])
@@ -122,15 +122,15 @@ Once you "Tailscale up" it will ask you to Authenticate
 
 Now lets log into Tailscale and set up our node on the website. First we need to accept the subnet routes and exit node as advertised, on the Machines Tab next to the device you just added, click the three dots and "Edit route settings...":
 
-![Accepting Subnet Routes and Exit Note](:/{{page.imgdate}}/7.png){:data-align="center"}
+![Accepting Subnet Routes and Exit Note](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 Then disable key expiry. This makes it where we don't have to reauthenticate Tailscale every so often. I do not recommend this on mobile clients, only clients that are static and not expected to move:
 
-![Disable Key Expiry](:/{{page.imgdate}}/8.png){:data-align="center"}
+![Disable Key Expiry](/assets/img/posts/{{page.imgdate}}/8.png){:data-align="center"}
 
 Now set up DNS in Tailscale. Go to your admin console -> DNS and use the "Tailscale IP" of your PiHole server as the DNS server for "Global Nameservers" then check off "Override local DNS". This forces your clients connected to utilize PiHole for their DNS requests.
 
-![DNS Nameservers and Override](:/{{page.imgdate}}/9.png){:data-align="center"}
+![DNS Nameservers and Override](/assets/img/posts/{{page.imgdate}}/9.png){:data-align="center"}
 
 Now you have not only a Tailscale Mesh VPN Solution, up and ready to go, but you also have an ad blocker for a "road warrior" set up to block ads anywhere you are.
 

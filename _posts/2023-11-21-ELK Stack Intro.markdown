@@ -18,7 +18,7 @@ Video Here: https://youtu.be/olna19zwtoE?si=K-PJgKt6HW8Q0HJ_
 
 The Elastic Stack, also known as the ELK Stack is a powerful platform for data analysis and visualization that consists of three different tools: Elasticsearch, Logstash, and Kibana. A fourth tool, Beats, is commonly used to take data from various sources and send them to the stack. These tools work together to collect, process, and display data from various sources, such as logs, metrics, events, and more.
 
-![ESXI Setup Screen](:/{{page.imgdate}}/1.png){:data-align="center"}
+![ESXI Setup Screen](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 Some of the features and benefits of the ELK Stack are scalability, flexibility, reliability, and ease of use. It can deal with large amounts of data, work with various data types and formats, deliver fast and relevant search results, and provide a range of visualization and dashboard options. The ELK Stack can also work with other tools and frameworks, such as Apache Kafka, Apache Spark, and TensorFlow, to improve its abilities and functions.
 

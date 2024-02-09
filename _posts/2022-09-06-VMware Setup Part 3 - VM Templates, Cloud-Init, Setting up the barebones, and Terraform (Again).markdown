@@ -26,42 +26,42 @@ Following the above guide, we are going to create our first virtual machine temp
 
 So following the steps, lets deploy our VM:
 
-![New Virtual Machine](:/{{page.imgdate}}/1.png){:data-align="center"}
+![New Virtual Machine](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 Omitting some steps above (following the resource above) I am going to store this on my ISO share, it’s shared above all three nodes (Network ISO Share):
 
-![Network Share (ISO’s)](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Network Share (ISO’s)](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Also worth noting, in vCenter 7, (unsure if in vCenter 6.7) a neat feature is this:
 
-![Hardware Requirements Min/Max](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Hardware Requirements Min/Max](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 This feature is a quick reference which lets me know how much ram my VM will need to operate. Keep in mind 512 MB of RAM is ONLY for Server CORE. For Desktop Experience you still want 2GB (Server 2k19). You can click to set the minimum requirements here, however you will run into Error Code 0xc0000017 when booting with only 512 MB of ram (it complains about not having enough for a ram disk for booting up). Set your initial install to 1 GB then later back to 512 MB if you really want to slim down your DC’s (I plan on doing this).
 
-![How long it felt for this install… I could have installed Windows 3.1x from a 5.25 faster…](:/{{page.imgdate}}/4.png){:data-align="center"}
+![How long it felt for this install… I could have installed Windows 3.1x from a 5.25 faster…](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 _NOTE TO SELF: Installing to the NFS ISO Drive (with the ISO on the NFS ISO Drive) while the kids are watching shows on the Plex Server on two TV’s taxes the drives. This… Took… For… Ever… I will most likely set the install location on an SSD and vMotion this bad boy to the ISO once it’s done installing/post install steps as I had to wait nearly two hours to install Windows 2k19 Core Datacenter edition (yes it’s overkill for a DC – I had obtained a cheap license from an .edu discount when I was working for a college though)_
-![Finally! Success! It’s still slow loading though because ITS ON AN NFS DRIVE! And my kids are still watching TV…](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Finally! Success! It’s still slow loading though because ITS ON AN NFS DRIVE! And my kids are still watching TV…](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 Set the new Administrator Password:
 
 
-![Admin Password](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Admin Password](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 Install VMware Tools:
 
 
-![VMWare Tools](:/{{page.imgdate}}/7.png){:data-align="center"}
+![VMWare Tools](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 After you mount, navigate to D: then setup.exe, minimize the command prompt and follow the instructions for a “typical” installation. Then restart.
 
 After it restarts, verify that vCenter see’s VMware tools is installed:
 
-![VMware Tools Installed](:/{{page.imgdate}}/8.png){:data-align="center"}
+![VMware Tools Installed](/assets/img/posts/{{page.imgdate}}/8.png){:data-align="center"}
 
 I set automatic updates using sconfig (Note, before making a template, I’ll let server core run a day or two to ensure its up to date, especially since it’s running on minimal RAM and on my NFS share)
 
-![Server Core Screen (SConfig)](:/{{page.imgdate}}/9.png){:data-align="center"}
+![Server Core Screen (SConfig)](/assets/img/posts/{{page.imgdate}}/9.png){:data-align="center"}
 
 Set Execution Policy to Bypass in Powershell (First type “Powershell” in the command prompt, then type:
 
@@ -94,12 +94,12 @@ cmd.exe /c net start winrm
 ```
 Now it’s time to configure the rest of the virtual machine, set your memory/RAM to the minimum (512 MB for Core, 2GB for Desktop Experience), CPU to 1, and CD/DVD drive to “Client Device” and disconnect it. Then convert it to template.
 
-![Disconnected CD/DVD and changed settings](:/{{page.imgdate}}/10.png){:data-align="center"}
-![Convert to Template](:/{{page.imgdate}}/11.png){:data-align="center"}
+![Disconnected CD/DVD and changed settings](/assets/img/posts/{{page.imgdate}}/10.png){:data-align="center"}
+![Convert to Template](/assets/img/posts/{{page.imgdate}}/11.png){:data-align="center"}
 
 Success! It’s now a template
 
-![Template](:/{{page.imgdate}}/12.png){:data-align="center"}
+![Template](/assets/img/posts/{{page.imgdate}}/12.png){:data-align="center"}
 
 I will repeat this for Windows Server 2019 Desktop Experience too (This is much simpler for the WinRM step, as I can run the .ps1 script instead of manually running the commands above).
 
@@ -126,23 +126,23 @@ Setting up Terraform can be done on a separate computer, or directly on one of t
 First and foremost, we need to create a Terraform Service Account (In vCenter -> Users and Groups -> Add User:
 
 
-![Create Service Account](:/{{page.imgdate}}/13.png){:data-align="center"}
+![Create Service Account](/assets/img/posts/{{page.imgdate}}/13.png){:data-align="center"}
 
 Next, using the Ubuntu Template from above, I’ll deploy a new VM from the template, set up the VS-Code Server, and install Terraform directly on this server. The .tf files on this server will be backed up to a future Git server (for versioning) and further backed up to my NAS and the cloud.
 
 
-![Terraform insalled/VS Code Set up](:/{{page.imgdate}}/14.png){:data-align="center"}
+![Terraform insalled/VS Code Set up](/assets/img/posts/{{page.imgdate}}/14.png){:data-align="center"}
 
 I borrowed a test script from here – https://www.virtualizationhowto.com/2021/05/terraform-vsphere-tutorial-linux-virtual-machine-clone/ and modified the terraform.tfvars to fit my environment, as well as made some minor tweaks:
 
-![Terraform Init](:/{{page.imgdate}}/15.png){:data-align="center"}
+![Terraform Init](/assets/img/posts/{{page.imgdate}}/15.png){:data-align="center"}
 
 One note : Terraform is VERY picky on capitalizations:
 
-![Ensure everything is capitalized correctly!](:/{{page.imgdate}}/16.png){:data-align="center"}
+![Ensure everything is capitalized correctly!](/assets/img/posts/{{page.imgdate}}/16.png){:data-align="center"}
 
 After checking it over again:
 
-![Successful Terraform Plan](:/{{page.imgdate}}/17.png){:data-align="center"}
+![Successful Terraform Plan](/assets/img/posts/{{page.imgdate}}/17.png){:data-align="center"}
 
 So that tells me that this template will work. From here I’ll plan out the rest of my lab, for now It’s time to start writing out the code….

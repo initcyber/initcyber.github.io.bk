@@ -16,7 +16,7 @@ imgdate: 2023-11-21
 
 Installing ESXI 7.03 on these HP 800 G3’s is actually much easier than I expected since I had already activated and set up the Intel AMT. For those who don’t know, Intel AMT is essentially (for lack of better words) Intel’s IPMI (Intelligent Platform Management Interface) or Remote VNC wrapped into a nice fancy shell. I utilize Mesh Commander (An Open Source Remote Management Suite for Intel AMT), which can be ran using Windows or Linux (with an NPM Package Manager). Honestly, I found it much easier to use the Windows exe as it was already prepackaged and I didn’t have to install dependencies.
 
-![Mesh Commander’s Interface, which allows remote management of devices running equipped with Intel AMT](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Mesh Commander’s Interface, which allows remote management of devices running equipped with Intel AMT](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 I prepared three USB drive’s with ESXI 7.03 from VMware’s website and copied the ISO using Rufus (or Etcher if you are on Linux, or you can even use the DD command) and plugged them in.
 
@@ -24,28 +24,28 @@ A note before undertaking all of this, I had to update the firmware on all of th
 
 I sadly do not have screenshots of the installation process for ESXI, however during the installation, I chose to install to the 128 GB NVMe PCIe drives on each node. These were the smallest drives on the nodes. I also, when booting up the ISO, I opted to do a “Minimal” install for the ESXI System Partitions. So within 5 seconds of the boot screen popping up, press Shift + o, and you should be able to enter commands on the bottom (it appears like a shell prompt). Then add in “systemMediaSize=min” and press enter. This gives me more room for activities. (/end Step Brothers quote).
 
-![From https://kb.vmware.com/s/article/81166](:/{{page.imgdate}}/3.png){:data-align="center"}
+![From https://kb.vmware.com/s/article/81166](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 Afterwards, accept the typical EULA, select your installation disk, your keyboard layout, set your root password, press f11 to confirm your install, reboot and you are off to the races. If you already set up your DNS server on your router like I did (or wherever your DNS servers reside) then log in using your FQDN or IP address, otherwise when your servers reset, you’ll be presented with whatever DHCP assigned your server (in my case, I assigned my nodes esxi1, esxi2 and esxi3).
 
 ### Set up the SSL Certificate that I <s>borrowed</s> Stole from my router
 
 Next on my list was to set up my SSL Certificate on my ESXI Server because I was tired of looking at this when I log in:
-![What do you mean? ITS ON MY NETWORK! (Yes, I know, it’s not a FQDN, but this is after I already set up my SSL certs and I don’t have a screenshot)](:/{{page.imgdate}}/4.png){:data-align="center"}
+![What do you mean? ITS ON MY NETWORK! (Yes, I know, it’s not a FQDN, but this is after I already set up my SSL certs and I don’t have a screenshot)](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Actually, it’s more than just that, it’s to ensure that communication between the server and client is secure. But wait, I’m not exposing these to the internet right? …
 
-![Memes 'r us](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Memes 'r us](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 JUST KIDDING. DONT EVER EXPOSE YOUR HYPERVISORS TO THE INTERNET!!!! Not unless you have it secured behind several authentication points/two factors/vpn’s/etc, and know exactly what you are doing (not in the scope of this post).
 
 So how exactly did I steal my SSL Certificate from my pfSense router? Well after I generated my wildcard certificate with [ACME](https://docs.netgate.com/pfsense/en/latest/packages/acme/index.html) I simply went to my pfSense Router -> System -> Cert. Manager:
 
-![System -. Cert Manager](:/{{page.imgdate}}/6.png){:data-align="center"}
+![System -. Cert Manager](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 Then on this page, on the newly created Wild Card certificate, click on “Export Key” and “Export Certificate” (Save these files somewhere you can remember, you will open these later).
 
-![Red Circle – Export Certificate / Export Key](:/{{page.imgdate}}/7.png){:data-align="center"}
+![Red Circle – Export Certificate / Export Key](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 Now we need to enable SSH on each of the ESXI Servers and log in via SSH (for the remaining steps, I am sure we can use an Ansible Script to do this, but honestly I did this really late, and I just manually did this). Lets go to the location where SSL Certs are stored and create a backup:
 

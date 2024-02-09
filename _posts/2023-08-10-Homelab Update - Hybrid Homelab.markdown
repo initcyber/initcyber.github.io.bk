@@ -19,17 +19,17 @@ Unless you have been living under a rock, you know that the Cloud is one of the 
 Oracles [https://www.oracle.com/cloud/free/](free tier) provides two 1 CPU/1GB AMD servers and up to 4 instances of ARM Ampere A1 compute devices (with upwards of 24 GB of ram!!!!). Currently I have 4 instances running and have been running this configuration for over a year, and recently I have it connected to my homelab.
 
 
-![Oracle Cloud Logo](:/{{page.imgdate}}/1.png){:data-align="center"}
+![Oracle Cloud Logo](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 #### Oracle connected to ESXI
 So inside of the homelab I currently have three resource pools running. One of these pools is a separated homelab (not listed), however one pool is a test bed for currently testing new tools (Labeled DMZ-TestBed) and one is a mirror of my public cloud interface that I am currently setting up (CloudMirror):
-![Two resource pools](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Two resource pools](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 And within Oracle I have four (4) cloud instances running - Demo and Demo-Docker (These connect to my DMZTestBed resources) and Proxy and DockerCloud (These connect to my CloudMirror Resource Pool):
-![Four Instances](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Four Instances](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 And below is a rough diagram of how this all works.
-![Diagram](:/{{page.imgdate}}/4.png){:data-align="center"}
+![Diagram](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 (I obviously do not draw diagrams for a living else I would be broke).
 
 Now how do I connect these together? Starting with the CloudMirror -> Proxy and DockerCloud I am using Tailscale with a MeshVPN solution. This allows me to not open ports into my home and makes it easy to use a third party "Control node" to control access from the outside. I create a site to site vpn which can communicate between my cloud environment and my home lab environment so that each device sees each other on a local network (i.e. I can ping the PRIVATE IP of the other device on the other side of the tunnel). This makes it REALLY nice for future growth of the lab. The virtual machine currently running in ESXI is a near exact replica of the Oracle Cloud instance, aside of the fact that Oracle is running ARM and my VM is running on x86_64, otherwise the same size SSD, RAM, etc. This is to keep the environments as close as possible for the docker environment I have installed on each.

@@ -21,8 +21,8 @@ So what does that mean for my homelab? A makeover. I could very well just buy mo
 ## Introducing New Hardware
 So what’s going to be in my new homelab? Well the Dell R520 was hosting TrueNAS with 2x 8tb HDD’s and 4x 6TB HDD’s, utilizing ZFS (1 Pool. 3 mirrored VDevs) and had 96 GB’s of DDR 3 ram and 2x E5-2430’s (12 cores, 24 threads). This was slightly overkill for something running nearly strictly NAS duties (and minor Docker Duties) and I needed something that was more scaled back.
 ### R520 Replacement (New NAS Box)
-![Desktop Computer](:/{{page.imgdate}}/2.png){:data-align="center"}
-![Inside of new NAS Box (OMV)](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Desktop Computer](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
+![Inside of new NAS Box (OMV)](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 This computer was a DOA “For Parts Only” computer from eBay for $20 shipped. A Cooler Master Elite RC-520 Case with the following specs:
 
@@ -37,11 +37,11 @@ The eBay seller could not get it to POST. I took a risk which paid off (I really
 
 Compared to my R520 this thing sips power (at idle, I was measuring 154 Watts on average!!!)
 
-![R520 Reading… It’s not doing anything right now other than sitting idle](:/{{page.imgdate}}/4.png){:data-align="center"}
+![R520 Reading… It’s not doing anything right now other than sitting idle](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 ### R420 Replacement (Hypervisor(s))
-![HP Elitedesk 800 G3](:/{{page.imgdate}}/5.png){:data-align="center"}
-![Inside with SSD](:/{{page.imgdate}}/6.png){:data-align="center"}
+![HP Elitedesk 800 G3](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
+![Inside with SSD](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 The new hypervisor boxes (yes plural) are the HP Elitedesk 800 G3’s. These are outfitted with:
 

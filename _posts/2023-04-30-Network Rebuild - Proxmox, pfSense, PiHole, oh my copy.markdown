@@ -51,11 +51,11 @@ Processors: 2 (1 Socket/2Core)
 Bios: Default (SeaBIOS)
 Display: Spice (Note: This saves on resources)
 Two Network Devices - Bridged from the gigabit adapter, and SEPARATE from the Proxmox Administrator port. Also DO NOT assign an ip address to these bridges
-![Settings for pfSense Virtual Machine in Proxmox](:/{{page.imgdate}}/1.png){:data-align="center"}
-![Settings for pfSense Networking in Proxmox](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Settings for pfSense Virtual Machine in Proxmox](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
+![Settings for pfSense Networking in Proxmox](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Once installed, I loaded my backup, made necessary changes to my VLAN's to the new interfaces, and was back up and running within minutes.
-![pfSense Running - Dashboard - Purring along](:/{{page.imgdate}}/3.png){:data-align="center"}
+![pfSense Running - Dashboard - Purring along](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 
 ### PiHole
@@ -97,10 +97,10 @@ then change your password to something more memorable (like Password123) ... jus
 A few things we need to set in PiHole to work with pfSense.
 
 In Settings -> DNS: Under "Potentially Dangerous Options": Select "Respond only on Interface Eth0" or whatever your interface is. This is Optional, however when using VLAN's I found in my environment that when I was jumping over VLAN's to this network PiHole had a fit. 
-![Respond only on Interface Eth0](:/{{page.imgdate}}/4.png){:data-align="center"}
+![Respond only on Interface Eth0](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 In the same screen just below it, uncheck "Never forward non-FQDN A and AAAA queries" and "Never forward reverse lookups for private IP ranges". These settings help with DNS Names between PiHole and pfSense (so you can track hosts in PiHole)
-![Other Settings](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Other Settings](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 #### Now onto pfSense Settings:
 
@@ -113,7 +113,7 @@ You may need to reboot everything (including endpoints, unless you flushDNS reco
 
 I had a spare USB drive sitting around that was doing nothing but collecting dust, so I formatted it in Proxmox, and installed it, assigned it as a directory, and gave it permissions to be a VM/CT Backup space 
 
-![Backup](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Backup](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 You can also schedule/automate these backups (and read all about them [here](https://pve.proxmox.com/wiki/Backup_and_Restore)).
 
@@ -121,4 +121,4 @@ The beauty about these backups is that if and when this ever goes down, I can im
 
 And here is a cheap diagram of how this is set up
 
-![Cheap Diagram](:/{{page.imgdate}}/7.png){:data-align="center"}
+![Cheap Diagram](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}

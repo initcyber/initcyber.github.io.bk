@@ -18,11 +18,11 @@ Yesterday we left off with installing the universal forwarder on Windows and man
 
 First lets visit the Splunk Downloads page and grab the URL for our Universal Forwarder. If we had a GUI we could simply download it from here, or we could SCP the file over through SSH from our host computer, however I prefer directly downloading the file using their provided wget command:
 
-![Splunk Download Screen](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Splunk Download Screen](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
-![Click above to get the wget command](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Click above to get the wget command](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
-![wget Command](:/{{page.imgdate}}/4.png){:data-align="center"}
+![wget Command](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Now lets SSH over to our Linux box and download the universal forwarder
 
@@ -49,9 +49,9 @@ $ sudo ./splunk stop
 $ sudo ./splunk enable boot-start
 ```
 
-![Enabled](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Enabled](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
-![Started](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Started](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 Now let’s set up the Universal Forwarder to reach out to our Splunk Enterprise “all in one” instance for instructions on what to forward/how to forward logs/information (i.e. the deployment server). In a typical enterprise environment you would have a deployment server set up that would be responsible for this task, however in our #homelab we have everything tied into one. Let’s continue:
 
@@ -69,7 +69,7 @@ $ sudo ./splunk restart
 ```
 And back to our Splunk Enterprise instance:
 
-![New Forwarders](:/{{page.imgdate}}/7.png){:data-align="center"}
+![New Forwarders](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 Continue on with adding this Linux host and configuring what logs to aggregate.
 
@@ -78,31 +78,31 @@ Continue on with adding this Linux host and configuring what logs to aggregate.
 ## Let’s browse some Splunk Applications
 From the Splunk homepage, click on “Splunk Apps” and lets search for “Windows”
 
-![Splunk Homepage](:/{{page.imgdate}}/8.png){:data-align="center"}
+![Splunk Homepage](/assets/img/posts/{{page.imgdate}}/8.png){:data-align="center"}
 
 From the Splunk homepage, click on “Splunk Apps” and lets search for “Windows”
 
-![Splunk Apps](:/{{page.imgdate}}/9.png){:data-align="center"}
+![Splunk Apps](/assets/img/posts/{{page.imgdate}}/9.png){:data-align="center"}
 
-![Added](:/{{page.imgdate}}/10.png){:data-align="center"}
+![Added](/assets/img/posts/{{page.imgdate}}/10.png){:data-align="center"}
 
 The Splunk Add-on for Microsoft Windows provides Splunk with better insight/data ingestion for Windows Products, Read more here: https://apps.splunk.com/app/742 and https://docs.splunk.com/Documentation/AddOns/released/Windows/AbouttheSplunkAdd-onforWindows
 
 We’ll also install another Application, Windows Personal Security
 
-![Windows Personal Security](:/{{page.imgdate}}/11.png){:data-align="center"}
+![Windows Personal Security](/assets/img/posts/{{page.imgdate}}/11.png){:data-align="center"}
 
 After installing Windows Personal Security you can go to the dashboard and it provides you with an already configured template for Windows Event Log review:
 
-![Windows Personal Security Dashboard](:/{{page.imgdate}}/12.png){:data-align="center"}
+![Windows Personal Security Dashboard](/assets/img/posts/{{page.imgdate}}/12.png){:data-align="center"}
 
 The top bar allows you to review different data sets, for example clicking on “System”
 
-![Windows Personal Security System](:/{{page.imgdate}}/13.png){:data-align="center"}
+![Windows Personal Security System](/assets/img/posts/{{page.imgdate}}/13.png){:data-align="center"}
 
 We can see there are several security log events for my Windows PC, Let’s take a look at the Application Log Events.
 
-![Application Log Events](:/{{page.imgdate}}/14.png){:data-align="center"}
+![Application Log Events](/assets/img/posts/{{page.imgdate}}/14.png){:data-align="center"}
 
 This has pre-defined searches within the log files you can review here, made up in a pre-configured dashboard.
 

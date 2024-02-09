@@ -17,7 +17,7 @@ As part of the Homelab revamp, I decided it best to completely blow away all of 
 
 
 
-![New Homelab, who dis?](:/{{page.imgdate}}/1.png){:data-align="center"}
+![New Homelab, who dis?](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 #### Splunk... Again? Why not (insert X logging/metrics solution)
 Yes, Splunk, again. Reason? 
@@ -30,7 +30,7 @@ This time I've set it up to have a "Hot" storage and a "Cold" storage using "Mag
 
 Ok, it's not magic, but this time I decided it best to reinstall RHEL8 using CIS Benchmarks Level 1 Server for hardening (RHEL does this easily during the initial install, just separate the /home, /tmp, and /var/tmp onto sep partitions if memory serves right). I also added a 500 GB storage from one of the HDD's on one of the nodes in order to store "cold" log files (after 30 days) and keeping "hot" files on a separate 20GB partition. These have been mounted on /mnt/splunk (hot) and /mnt/splunk/cold (cold) in a nested fashion, which makes it easier in the Splunk GUI to assign hot/cold DB's. The Splunk Config has also been modified to default to these directories, CHMOD splunk:splunk on the appropriate folders, formatted, etc (not necessarily in that order).
 
-![Data Partition Layout](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Data Partition Layout](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 For those asking why not Graylog, ELK/Loki/Grafana/Promtail, etc., well those will probably be installed later on once everything else comes into play and integrated. We are rebuilding here.
 
@@ -82,11 +82,11 @@ Now lets test OPNSense to ensure we are able to send it's logs to our new syslog
 
 I'm going to use TCP transport and for Applications leave blank to select everything, Keep the "Levels" at the default values, Facilities leave blank (to select everything) and enter the appropriate Hostname and port (514) and rfc5424 unchecked. Enter a description if you wish. Then click "save" and "apply".
 
-![OPNSense Logging/target Screenshot](:/{{page.imgdate}}/4.png){:data-align="center"}
+![OPNSense Logging/target Screenshot](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Then back to the syslog server check the /var/log/remote folder for your log files:
 
-![New Log Files](:/{{page.imgdate}}/5.png){:data-align="center"}
+![New Log Files](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 ### Splunk Setup
 #### Setting up Splunk Index for OPNSense Logs
@@ -96,7 +96,7 @@ In Splunk, I'll create an index for Network, which will capture everything for F
 
 Please note - I have a separate Cold Index set up, you may or may not have this set up.
 
-![Splunk Index](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Splunk Index](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 #### Side Note
 If you do not have the Common Information Model Splunk Add on installed, now is a good time to get this installed and turned on.... Then accelerate the appropriate index:
@@ -127,7 +127,7 @@ $ sudo ./splunk enable boot-start
 then set up your inputs.conf and outputs.conf in /opt/splunkforwarder/etc/system/local/ as needed
 
 #### Checking Splunk for Data
-![It works](:/{{page.imgdate}}/7.png){:data-align="center"}
+![It works](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 If all goes well, you will have data in splunk. From here follow the guides for the OPNsense app for Splunk
 [OPNsense Guide - The rest of the steps](https://splunk-opnsense.ztsplunker.com/getting-started/configure/configure-macros/)
 

@@ -15,7 +15,7 @@ imgdate: 2023-11-21
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 [Ansible](https://www.ansible.com/resources/get-started) is a product currently developed by RedHat which is similar to [Chef](https://www.chef.io/) and [Puppet](https://puppet.com/), which provides SysAdmins a way to deploy, configure, and orchestrate their whole environment through the use of Playbooks (scripts). A major plus however to Ansible is that it is agentless, meaning that there isn’t a need to install another piece of software on the remote systems in order for Ansible to communicate and interact with them. To make things even more simpler, [Ansible Tower](https://docs.ansible.com/ansible/2.5/reference_appendices/tower.html#:~:text=Ansible%20Tower%20(formerly%20'AWX',all%20of%20your%20automation%20tasks), provides a Web UI front end which can help expedite the deployment of these Playbooks, provide security (by allowing the sharing of credentials without the ability of transferring the credentials), as well as other many other cool features.
-![Photo Screenshot from https://www.ansible.com/](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Photo Screenshot from https://www.ansible.com/](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 (While outside the scope of this particular blog post, just for note: Ansible Tower is unfortunately behind a RedHat pay-wall, HOWEVER, the AWX Project – [here](https://www.ansible.com/products/awx-project/faq) and [here](https://github.com/ansible/awx) is open-source and upstream. It is readily available and can be used, however I would highly suggest learning how to write Playbooks first before trying out AWX/Ansible Tower in order to get the basics down first).
 
@@ -52,13 +52,13 @@ Luckily for us, Ansible is in the default Debian repositories so we can easily i
 $ sudo apt install ansible
 ```
 
-![Ansible installed](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Ansible installed](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 You can confirm everything is good with
 ```bash
 $ ansible --version
 ```
-![Ansible Version](:/{{page.imgdate}}/4.png){:data-align="center"}
+![Ansible Version](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 And just like that Ansible is installed on our Control Node. Now how do we use it? Well Ansible works by communicating over SSH (primarily), API’s, or even WinRM (little harder to set up but can be done). Since I have other VM’s readily available with SSH, the rest of this series will be focused on connecting via SSH.
 
@@ -75,7 +75,7 @@ And we will make a hosts file, also known as an Inventory file. This file will c
 $ nano host
 ```
 
-![New Host File](:/{{page.imgdate}}/4.png){:data-align="center"}
+![New Host File](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Inside of it:
 [node1] – Identifies different “Groups”
@@ -94,7 +94,7 @@ Now copy them to your machines (my above example is 10.10.10.21):
 ```bash
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub justin@10.10.10.21
 ```
-![Adding the SSH keys to allow my Ansible Control Machine to talk to my other machine](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Adding the SSH keys to allow my Ansible Control Machine to talk to my other machine](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 So now that we have our hosts file (also known as the Inventory File), we will test our Ansible installation and setup to ensure that everything is working and communicating as it should. Just as junior network admins use ping, so does Ansible in their tools, lets use it now:
 
@@ -102,10 +102,10 @@ So now that we have our hosts file (also known as the Inventory File), we will t
 $ ansible -i ./hosts all -m ping
 ```
 A good ping should look like:
-![Ping Pong](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Ping Pong](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 Otherwise it may look like:
 
-![Bad Pong](:/{{page.imgdate}}/7.png){:data-align="center"}
+![Bad Pong](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 The possibilities with Ansible are nearly endless as you start to delve into learning how you can better utilize this in your environment. From simple patching to eventually setting up your entire Infrastructure as a Code (although other tools are available, such as Terraform, it can be done with Ansible!). In the upcoming days, we will continue to build playbooks to interact with our other virtual machines.

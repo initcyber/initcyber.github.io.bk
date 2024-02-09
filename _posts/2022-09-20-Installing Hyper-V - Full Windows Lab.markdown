@@ -24,7 +24,7 @@ So lets get started:
 
 ### Installing Hyper-v 2019 Core
 Start off with your typical bare metal installation, then set your password after first boot. Once you log in you will be presented in the "sconfig" screen
-![Sconfig](:/{{page.imgdate}}/1.png){:data-align="center"}
+![Sconfig](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 Lets go ahead and turn on the following:
 - Remote Management - Yes
@@ -47,7 +47,7 @@ Enable-WSManCredSSP -Role server
 
 These two commands Allow Powershell Remoting and allow remote access on public zones and enable firewall rules for CredSSP/WinRM.
 
-![Enable-WSManCredSSP -Role server](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Enable-WSManCredSSP -Role server](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Now onto our Windows Machine
 
@@ -65,7 +65,7 @@ or using an Elevatated (Adminstrator) Powershell:
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-Tools-All -All
 ```
 
-![Powershell - Enable Hyper-V Tools](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Powershell - Enable Hyper-V Tools](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 You will need to restart after installation.
 
@@ -97,7 +97,7 @@ Two ways of doing this again:
 
 Edit directly with notepad C:\Windows\System32\drivers\etc\hosts
 
-![Edit this with Notepad](:/{{page.imgdate}}/4.png){:data-align="center"}
+![Edit this with Notepad](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Or use powershell:
 
@@ -132,7 +132,7 @@ WSManFault
 Error number:  -2144108183 0x80338169
 WinRM firewall exception will not work since one of the network connection types on this machine is set to Public. Change the network connection type to either Domain or Private and try again.
 ```
-![Error Message](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Error Message](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 And you checked ALL of your adapaters using 
 
 ```powershell
@@ -140,7 +140,7 @@ Get-NetAdapters
 ```
 But everything looks to be set to Private. Check to see if any Adapters exist for WSL OR VPN's and disable them manually. Re-enable them afterwards.
 
-![Disable other adapters](:/{{page.imgdate}}/6.png){:data-align="center"}
+![Disable other adapters](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 then
 
 ```powershell
@@ -169,7 +169,7 @@ The above commands modify the local group policy and "Allow delegating fresh cre
 
 Now lets open Hyper-V Server manager and connect:
 
-![Hyper-V Manager](:/{{page.imgdate}}/7.png){:data-align="center"}
+![Hyper-V Manager](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 For Username use "hostname\username" and your password
 

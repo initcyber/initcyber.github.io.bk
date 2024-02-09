@@ -25,7 +25,7 @@ Awesome Selfhosted GitHub is a list of software’s and libraries every homelabb
 
 Visual Studio Code is available for all operation systems and allows us to edit text files easily from the computer we are working on. Why is this important when we can just SSH into the box and open nano, vim, vi, or GNU emacs? Because Visual Studio Code allows this as well! Best of all you can also view the folder structure within and save the file to whichever folder you need to on the remote server, how cool is that?
 
-![Visual Studio Code - Dark Mode](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Visual Studio Code - Dark Mode](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 3. [PuTTY – a free SSH and telnet client for Windows (or Windows Terminal)](https://putty.org/)
 

@@ -15,7 +15,7 @@ imgdate: 2023-11-21
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
 Terraform is a CI/CD tool that has been been around for a while that is developed by [Hashicorp](https://www.terraform.io/) and is an industry standard when it comes to IAC (Infrastructure as Code).
-![Screenshot from https://www.terraform.io/](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Screenshot from https://www.terraform.io/](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 It integrates really well with all of the Cloud Providers, as well as Docker and Proxmox, which is what we will be connecting it to today, however first we need to set up a service account in Proxmox in order for Terraform to communicate to our Proxmox Node, lets SSH into Proxmox and run some commands to create the role with permissions, add the service account to the role, and generate the API token:
 
 ```bash
@@ -51,7 +51,7 @@ $ source ~/.zshrc
 ```
 Also in VS code we will install the Terraform VS Code Extension. Except we will use Anton K’s version, not Hashicorps extension, because of the memory bugs and autocomplete issues described in the recent reviews.
 
-![Terraform VS Code Plugin](:/{{page.imgdate}}/3.png){:data-align="center"}
+![Terraform VS Code Plugin](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 Terraform has three main stages of deployment, an Init stage, a plan stage and an apply stage. We will start with the plans and creating a new directory for Terraform to store some configuration files (which will be also found here https://github.com/initcyber/HomeInfastructure. We will create three files, provider.tf, ubuntu-clone.tf, and credentials.auto.tfvars. A breakdown of what these are:
 
@@ -63,11 +63,11 @@ credentials.auto.tfvars – this is our variables file – we set variables here
 
 First create a file called “credentials.auto.tfvars“:
 
-![We call out some variables that Terraform will use in provider.tf and ubuntu-clone.tf](:/{{page.imgdate}}/4.png){:data-align="center"}
+![We call out some variables that Terraform will use in provider.tf and ubuntu-clone.tf](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Next let’s create our provider.tf file:
 
-![provider.tf – code below as well](:/{{page.imgdate}}/5.png){:data-align="center"}
+![provider.tf – code below as well](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 ```bash
 # Proxmox Provider
@@ -121,11 +121,11 @@ $ terraform init
 ```
 To test out the configuration to ensure that everything is working as should (initially).
 
-![It Works!](:/{{page.imgdate}}/6.png){:data-align="center"}
+![It Works!](/assets/img/posts/{{page.imgdate}}/6.png){:data-align="center"}
 
 Next, we create our ubuntu-clone.tf file. This file defines the virtual machine(s) we create. For references on variables, we can refer to here [proxmox_vm_qemu | Resources](https://registry.terraform.io/providers/Telmate/proxmox/latest/docs/resources/vm_qemu) :
 
-![Screenshot of the code, after I took this screenshot I realized I had “Count = 0” should be “Count = 1”, Corrected code snippet below:](:/{{page.imgdate}}/7.png){:data-align="center"}
+![Screenshot of the code, after I took this screenshot I realized I had “Count = 0” should be “Count = 1”, Corrected code snippet below:](/assets/img/posts/{{page.imgdate}}/7.png){:data-align="center"}
 
 ```bash
 # Proxmox Full-Clone for Ubuntu VM's (Ubuntu 22.04 cloud-init)
@@ -187,21 +187,21 @@ Now we test out our “plan” phase. Back to our VS Code Terminal and within th
 
 You output should look similar to this:
 
-![Terraform Plan](:/{{page.imgdate}}/8.png){:data-align="center"}
+![Terraform Plan](/assets/img/posts/{{page.imgdate}}/8.png){:data-align="center"}
 
 Then we simply do “Terraform Apply” and if everything is set correctly:
 
-![After typing “terraform apply” then you confirm with “yes”](:/{{page.imgdate}}/9.png){:data-align="center"}
-![Anxious moments](:/{{page.imgdate}}/10.png){:data-align="center"}
-![It Works!](:/{{page.imgdate}}/11.png){:data-align="center"}
-![I have a terminal](:/{{page.imgdate}}/12.png){:data-align="center"}
+![After typing “terraform apply” then you confirm with “yes”](/assets/img/posts/{{page.imgdate}}/9.png){:data-align="center"}
+![Anxious moments](/assets/img/posts/{{page.imgdate}}/10.png){:data-align="center"}
+![It Works!](/assets/img/posts/{{page.imgdate}}/11.png){:data-align="center"}
+![I have a terminal](/assets/img/posts/{{page.imgdate}}/12.png){:data-align="center"}
 
 That’s great and all, but I’ve done all this work, how do I destroy the VM’s now if this is all “Infrastructure as Code”?
 Well that’s simple, you click on the top and shut it down, one by one and then you simply destroy the vm’s one by one, even when you create 100 of them…
 
 Just kidding, remember the “Count” variable we made above? Set that to “0” and rerun “terraform apply” and watch the magic.
 
-![Viola it's gone](:/{{page.imgdate}}/13.png){:data-align="center"}
+![Viola it's gone](/assets/img/posts/{{page.imgdate}}/13.png){:data-align="center"}
 
 This is just a simple example of Terraform creating an Ubuntu VM from a cloud-init template, however when it comes to writing your entire infrastructure as code, you can simply write out your entire homelab in a file, and bring it up, and tear it down as you please all with a simple command. Some caveats however are just to be sure that you are careful with your disk selection (and using the appropriate disk storage/etc) as to not overprovision, and to carefully network everything. Obviously this example is for someone looking to scale out their VM’s, such as in a production environment where multiple VM’s are needed (let’s say for a load-balanced situation, where we would have another Ansible playbook behind to configure everything or similar configuration management tool to set everything up), but even for a homelab environment you can set up everything via code, that way if anything happens you can easily tear it down and rebuilt without having to reinstall the OS manually each time.
 

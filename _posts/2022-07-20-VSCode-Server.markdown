@@ -28,7 +28,7 @@ Then we need to edit our config to set our default password to log into the serv
 $ sudo nano ~/.config/code-server/
 ```
 
-![Afterward ctrl + x to save](:/{{page.imgdate}}/2.png){:data-align="center"}
+![Afterward ctrl + x to save](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 Afterward ctrl + x to save
 
@@ -42,17 +42,17 @@ Where USER is your username. Then check on the status to make sure its running
 ```bash
 $ sudo systemctl status code-server@USER
 ```
-![It's running](:/{{page.imgdate}}/3.png){:data-align="center"}
+![It's running](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 If all is well you should be able to access it from the IP address of your virtual machine with port 8080 (in my instance its 10.10.10.21:8080. Later (not covered in this blog) I will put it behind a reverse proxy in order to access it from the outside world, coupled with some sort of SSO authentication such as Authelia or Authentik.
 
 
-![Login Screen](:/{{page.imgdate}}/4.png){:data-align="center"}
+![Login Screen](/assets/img/posts/{{page.imgdate}}/4.png){:data-align="center"}
 
 Use the password we set up in our Config and now we should be able to access our server.
 
 
-![Code Server Screen](:/{{page.imgdate}}/5.png){:data-align="center"}
+![Code Server Screen](/assets/img/posts/{{page.imgdate}}/5.png){:data-align="center"}
 
 Now this isn’t using SSL (https), which is why it is recommended to use a reverse proxy with an SSL certificate in order to protect yourself if you expose this to the outside world. From here you can set up your github/self hosted git/version control repository for your code. You can also set up your extensions that you would normally use (for your programming languages, etc.) and it will carry over each time you sign in, no matter what device you log in from. This saves time from having to install VSCode and setting everything up (granted the single-sign on through Microsoft or GitHub does carry over most everything).
 

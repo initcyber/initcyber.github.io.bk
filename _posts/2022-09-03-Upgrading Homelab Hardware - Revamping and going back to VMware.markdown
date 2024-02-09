@@ -20,7 +20,7 @@ So for now, back to VMware’s world I go, but first I need to upgrade some hard
 
 ### Hardware Upgrades
 
-![HP 800 G3](:/{{page.imgdate}}/1.png){:data-align="center"}
+![HP 800 G3](/assets/img/posts/{{page.imgdate}}/1.png){:data-align="center"}
 
 I had three of the HP 800 G3’s – Each one of these HP 800 G3’s came with an I5 7500 (4C/4T) a 250 GB SATA SSD and 8 GB’s of RAM. When I ordered these units I originally purchased an additional 8 GB’s of RAM and had some random NVMe Drives – a 1 TB NVMe and a 128GB NVMe. I also had 2x PCIe x4 NVMe adapters to fit.
 
@@ -28,7 +28,7 @@ The HP 800 G3’s can hold an NVMe on the motherboard, so to hold an additional 
 
 I also needed more RAM, as I wanted to run vCenter to manage the newly designed three (3) node cluster (which will be described in the future posts). vCenter unfortunately can not have a portion of it offloaded onto a separate Windows OS (I was hoping to put this on my workstation) like you could with 6.7, therefore it will eat a portion of my RAM (default 12 GB of ram, however in a future post I’ll show you how you can get by with 6 GB of ram (It will scream at you…):
 
-![6 GB of Ram – It hates it but it works!](:/{{page.imgdate}}/2.png){:data-align="center"}
+![6 GB of Ram – It hates it but it works!](/assets/img/posts/{{page.imgdate}}/2.png){:data-align="center"}
 
 So, since I need more RAM, and these HP 800 G3’s can take up to 64 GB of ram each, why not order more. Two additional sticks of 16 GB of ram for each machine should suffice (32 GB + 16 GB original = 48 GB x 3 Nodes = 144 Gigawatts Gigabytes!). That should be plenty of room for VM’s, and is more RAM than I had in my R420 with 120 GB of RAM. I will say that my CPU Core Count is a lot lower (40 Cores vs 12 Cores) but the processor is MUCH newer and the core clock is much more improved. Plus you can over-provision CPU in VM’s as CPU clocks aren’t all being used at once.
 
@@ -54,7 +54,7 @@ I am going to go over setting up ESXI on each host, and setting up the initial S
 
 Then I’ll go over setting up vCenter and how I set it up for using only 6GB of ram to save on my precious:
 
-![MY PRECIOUS RAM!](:/{{page.imgdate}}/3.png){:data-align="center"}
+![MY PRECIOUS RAM!](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 From there I will go over diagraming the homelab using tools such as draw.io (apps.diagrams.net now) to start pre-planning the lab/test environment for Active Directory, Vuln Scanner/Log Aggregation, and building out hopefully with cloud integration, etc.
 
