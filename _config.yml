@@ -36,16 +36,22 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
             - company_name: SeKON
-              company_logo: google.png
+              company_logo: sekon.png
               company_url: https://www.sekon.com
               designation: Lead Information Systems Security Engineer
               description: I have responsibly led a team of Information System Security Engineers and received multiple recognitions from Government Leadership on outstanding performance. Responsible for Cyber Security Engineering, Vulnerability Management, Compliance Management, and following NIST Guidelines/Risk Management Framework. Also performed roles in Data-Analytics and Business Development.
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: Georgia Tech Research Institute
+              company_logo: gtri.png
+              company_url: https://gtri.gatech.edu/
+              designation: Information Systems Security Officer
+              description: Responsible for ensuring information systems were properly maintained and security documentation was kept up to date in accordance with NIST 800-37 utilizing NIST 800-53 controls and the JSIG.
+              visibility: true
+            - company_name: Mount Vernon Towers
+              company_logo: mvt.png
+              company_url: https://mountvernontowers.com/
+              designation: I.T. Technician
+              description: I was a part of an Information Technology Team who assisted both residents and employees with IT Tasks. I managed both wireless and wired networks, infrastructure, and networks.
               visibility: true
 
 # Education
