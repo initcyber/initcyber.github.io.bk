@@ -76,7 +76,7 @@ author_project_details:
                 project_description: Homelab DevSecOp is a project I'm working on for Homelab automation of programs (CI/CD), and incorporating security tools for a mock "DevSecOp" environment.
                 project_url: https://github.com/initcyber/homelab_devsecop
                 visibility: true
-              - project_thumbnail: apister.PNG
+              - project_thumbnail: apister.png
                 project_title: APIster
                 project_description: WIP - APIster is designed to scrape a given URL/IP-Address for any open (possibly undocumented) API's, and provide feedback on data obtained
                 project_url: https://github.com/initcyber/APIster
