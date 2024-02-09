@@ -1,7 +1,7 @@
-title: devlopr
-subtitle: A Portfolio Jekyll Theme Built for Developers
+title: Init Cyber
+subtitle: Information Systems Security Engineer
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  I am an enthusiastic Information Systems Security Engineer/Cybersecurity Engineer.
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -35,11 +35,11 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
+            - company_name: SeKON
               company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+              company_url: https://www.sekon.com
+              designation: Lead Information Systems Security Engineer
+              description: I have responsibly led a team of Information System Security Engineers and received multiple recognitions from Government Leadership on outstanding performance. Responsible for Cyber Security Engineering, Vulnerability Management, Compliance Management, and following NIST Guidelines/Risk Management Framework. Also performed roles in Data-Analytics and Business Development.
               visibility: true
             - company_name: Microsoft
               company_logo: microsoft.png
