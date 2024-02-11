@@ -5,9 +5,9 @@ summary: "Over-Engineering your Logging systems"
 author: initcyber
 date: '2023-05-16 14:35:23 +0530'
 category: ['Splunk','SysLog', 'SIEM']
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+thumbnail: /assets/img/posts/2023-05-16/1.jpg
+keywords: Central Logging Server, Splunk Forwarder, SIEM
+permalink: /blog/Central-Logging-Server/
 usemathjax: true
 imgdate: 2023-05-16
 ---

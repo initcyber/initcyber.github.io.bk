@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Ansible Series - AWX Logging"
-summary: "Getting Started using devlopr-jekyll"
+summary: "Logging your Ansible Playbooks"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
+date: '2023-05-06 14:35:23 +0530'
+category: ['Logging', 'ansible', 'awx']
+thumbnail: /assets/img/posts/2023-05-06/1.jpg
 keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+permalink: /blog/Ansible-AWX/
 usemathjax: true
 imgdate: 2023-11-21
 ---

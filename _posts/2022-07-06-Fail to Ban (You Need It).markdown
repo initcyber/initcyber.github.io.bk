@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Fail to Ban - You need it!"
+summary: "Easy to use, quick to deploy, another layer of safety"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2022-07-06 14:35:23 +0530'
+category: Fail2Ban
+thumbnail: /assets/img/posts/2022-07-06/1.jpg
+keywords: Fail2Ban, SSH, Cybersecurity
+permalink: /blog/fail2ban/
 usemathjax: true
 imgdate: 2023-11-21
 ---

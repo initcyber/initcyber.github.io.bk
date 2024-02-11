@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Splunk Enterprise Pt. 1"
+summary: "Splunk is best known for monitoring, searching through, analyzing, and providing visuals for real time data."
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2022-07-03 14:35:23 +0530'
+category: Splunk
+thumbnail: /assets/img/posts/2022-07-03/1.jpg
+keywords: Splunk
+permalink: /blog/Splunk-Pt-1/
 usemathjax: true
 imgdate: 2023-11-21
 ---

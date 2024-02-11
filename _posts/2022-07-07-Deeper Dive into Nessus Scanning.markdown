@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Deeper Dive into Nessus Scanning"
+summary: "Jumpstart your cybersecurity career by understanding Nessus deeper"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2023-07-07 14:35:23 +0530'
+category: Nessus
+thumbnail: /assets/img/posts/2022-07-07/1.jpg
+keywords: Nessus
+permalink: /blog/Nessus-Deep-Dive/
 usemathjax: true
 imgdate: 2023-11-21
 ---

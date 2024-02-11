@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Ansible Series - AWX"
+summary: "In today's IT environments, Ansible is widely used as one of many various automation tools/configuration management, and products such as AWX and Ansible Tower help bring a centralized GUI..."
 author: initcyber
 date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
+category: Ansible
+thumbnail: /assets/img/posts/2023-05-05/1.jpg
+keywords: Ansible, AWX, Automation
 permalink: /blog/welcome-to-devlopr-jekyll/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-05-05
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
