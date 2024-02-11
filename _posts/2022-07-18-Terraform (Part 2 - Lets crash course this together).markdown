@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Terraform Pt 2"
+summary: "Crash Course Together!"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/2023-05-16/1.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2022-07-18 14:35:23 +0530'
+category: Terraform
+thumbnail: /assets/img/posts/2022-07-18/1.jpg
+keywords: Terraform, CrashCourse
+permalink: /blog/terraform-pt-2/
 usemathjax: true
 imgdate: 2023-11-21
 ---

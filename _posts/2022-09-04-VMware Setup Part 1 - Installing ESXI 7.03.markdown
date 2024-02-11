@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "VMWare Setup Pt 1"
+summary: "Installing ESXI 7.03"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/2023-05-16/1.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2022-09-04 14:35:23 +0530'
+category: vmware
+thumbnail: /assets/img/posts/2022-09-04/1.jpg
+keywords: vmware
+permalink: /blog/vmware-install-esxi/
 usemathjax: true
 imgdate: 2023-11-21
 ---

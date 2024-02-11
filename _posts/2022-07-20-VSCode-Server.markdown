@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "VSCode Servers"
+summary: "How to remotely edit code files"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/2023-05-16/1.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2022-07-20 14:35:23 +0530'
+category: VSCode
+thumbnail: /assets/img/posts/2022-07-20/1.jpg
+keywords: VSCode
+permalink: /blog/VSCODE-Server/
 usemathjax: true
 imgdate: 2023-11-21
 ---

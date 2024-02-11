@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Locking Down Ubuntu - CIS Benchmarks"
+summary: "You can do this too in your homelab"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/2023-05-16/1.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2023-05-04 14:35:23 +0530'
+category: CIS
+thumbnail: /assets/img/posts/2023-05-04/1.jpg
+keywords: CIS, Benchmarks
+permalink: /blog/cis-benchmarks-ubuntu/
 usemathjax: true
 imgdate: 2023-11-21
 ---

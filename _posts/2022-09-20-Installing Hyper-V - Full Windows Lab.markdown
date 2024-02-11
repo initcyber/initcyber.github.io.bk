@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Hyper-V - Install"
+summary: "Full Windows Homelab"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/2023-05-16/1.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2022-09-20 14:35:23 +0530'
+category: hyperv
+thumbnail: /assets/img/posts/2022-09-20/1.jpg
+keywords: Hyper-V, Windows, Microsoft
+permalink: /blog/Hyper-v-full-lab/
 usemathjax: true
 imgdate: 2023-11-21
 ---

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to devlopr-jekyll !"
-summary: "Getting Started using devlopr-jekyll"
+title:  "Network Rebuild"
+summary: "Proxmox, pfsense, pihole, oh my"
 author: initcyber
-date: '2019-05-22 14:35:23 +0530'
-category: jekyll
-thumbnail: /assets/img/posts/2023-05-16/1.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+date: '2023-04-30 14:35:23 +0530'
+category: proxmox
+thumbnail: /assets/img/posts/2022-04-30/1.jpg
+keywords: Network Rebuild, Proxmox, pfsense, pihole
+permalink: /blog/network-rebuild-proxmox-pfsense-pihole/
 usemathjax: true
 imgdate: 2023-11-21
 ---
