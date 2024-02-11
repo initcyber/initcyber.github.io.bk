@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/2022-07-04/1.jpg
 keywords: Splunk
 permalink: /blog/Splunk-Pt-2/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-04
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

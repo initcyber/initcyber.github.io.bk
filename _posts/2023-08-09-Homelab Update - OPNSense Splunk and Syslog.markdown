@@ -5,7 +5,7 @@ summary: "As part of the Homelab revamp, I decided it best to completely blow aw
 author: initcyber
 date: '2023-08-09 14:35:23 +0530'
 category: Homelab
-thumbnail: /assets/img/posts/2023-08-09/feat-1.jpg
+thumbnail: /assets/img/posts/2023-08-09/feat-1.png
 keywords: HomelabUpdate, OPNSense, Syslog
 permalink: /blog/homelab-update-opnsense-splunk-syslog/
 usemathjax: true

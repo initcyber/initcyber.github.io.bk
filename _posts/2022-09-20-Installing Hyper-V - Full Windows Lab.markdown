@@ -5,11 +5,11 @@ summary: "Full Windows Homelab"
 author: initcyber
 date: '2022-09-20 14:35:23 +0530'
 category: hyperv
-thumbnail: /assets/img/posts/2022-09-20/1.jpg
+thumbnail: /assets/img/posts/2022-09-20/1.png
 keywords: Hyper-V, Windows, Microsoft
 permalink: /blog/Hyper-v-full-lab/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-09-20
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

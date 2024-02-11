@@ -5,11 +5,11 @@ summary: "Diagrams using Draw.io"
 author: initcyber
 date: '2022-09-05 14:35:23 +0530'
 category: vmware
-thumbnail: /assets/img/posts/2022-09-05/1.jpg
+thumbnail: /assets/img/posts/2022-09-05/feat-1.png
 keywords: vmware
 permalink: /blog/vmware-draw-io/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-09-05
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

@@ -5,11 +5,11 @@ summary: "Different things you can use in your homelab"
 author: initcyber
 date: '2022-07-14 14:35:23 +0530'
 category: Homelab
-thumbnail: /assets/img/posts/2022-07-14/1.jpg
+thumbnail: /assets/img/posts/2022-07-14/feat-1.png
 keywords: Homelab, Tools
 permalink: /blog/homelab-tools/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-14
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

@@ -3,13 +3,13 @@ layout: post
 title:  "PFSense and PiHole on ESXI"
 summary: "Getting all three of these to play nicely"
 author: initcyber
-date: '2022-05-02 14:35:23 +0530'
+date: '2023-05-02 14:35:23 +0530'
 category: PFSense
-thumbnail: /assets/img/posts/2023-05-02/1.jpg
+thumbnail: /assets/img/posts/2023-05-02/1.png
 keywords: pfsense, pihole, esxi
 permalink: /blog/pfsense-pihole-esxi/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-05-02
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

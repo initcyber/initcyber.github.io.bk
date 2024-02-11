@@ -5,11 +5,11 @@ summary: "Bye bye esxi"
 author: initcyber
 date: '2022-07-16 14:35:23 +0530'
 category: proxmox
-thumbnail: /assets/img/posts/2022-07-16/1.jpg
+thumbnail: /assets/img/posts/2022-07-16/feat-1.png
 keywords: proxmox, esxi
 permalink: /blog/proxmox-esxi-byebye/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-16
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

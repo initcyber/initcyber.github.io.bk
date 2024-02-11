@@ -5,11 +5,11 @@ summary: "Re-do part 3,098"
 author: initcyber
 date: '2022-08-14 14:35:23 +0530'
 category: Homelab
-thumbnail: /assets/img/posts/2022-08-14/1.jpg
+thumbnail: /assets/img/posts/2022-08-14/feat-1.png
 keywords: Homelab
 permalink: /blog/homelab-changeup/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-08-14
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

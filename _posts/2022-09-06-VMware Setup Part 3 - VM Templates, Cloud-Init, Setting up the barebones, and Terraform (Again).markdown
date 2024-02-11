@@ -5,11 +5,11 @@ summary: "VM Templates, Cloud-init, Barebones, terraform, ... (oh my?)"
 author: initcyber
 date: '2022-09-06 14:35:23 +0530'
 category: vmware
-thumbnail: /assets/img/posts/2022-09-06/1.jpg
+thumbnail: /assets/img/posts/2022-09-06/1.png
 keywords: vmware
 permalink: /blog/vmware-pt-3-again/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-09-06
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

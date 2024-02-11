@@ -5,11 +5,11 @@ summary: "I actually like this..."
 author: initcyber
 date: '2022-07-15 14:35:23 +0530'
 category: WSL
-thumbnail: /assets/img/posts/2022-07-15/1.jpg
+thumbnail: /assets/img/posts/2022-07-15/feat-1.png
 keywords: WSL, WSL2, Windows and Linux
 permalink: /blog/wsl/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-15
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

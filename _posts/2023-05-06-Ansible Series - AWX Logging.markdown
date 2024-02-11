@@ -5,11 +5,11 @@ summary: "Logging your Ansible Playbooks"
 author: initcyber
 date: '2023-05-06 14:35:23 +0530'
 category: ['Logging', 'ansible', 'awx']
-thumbnail: /assets/img/posts/2023-05-06/1.jpg
+thumbnail: /assets/img/posts/2023-05-06/1.png
 keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
 permalink: /blog/Ansible-AWX/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-05-06
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

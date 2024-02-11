@@ -5,11 +5,11 @@ summary: "Adding more VM's and organizing your files"
 author: initcyber
 date: '2022-07-19 14:35:23 +0530'
 category: terraform
-thumbnail: /assets/img/posts/2022-07-19/1.jpg
+thumbnail: /assets/img/posts/2022-07-19/feat-1.png
 keywords: Terraform, automation
 permalink: /blog/terraform-pt-3/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-19
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

@@ -5,11 +5,11 @@ summary: "Installing ESXI 7.03"
 author: initcyber
 date: '2022-09-04 14:35:23 +0530'
 category: vmware
-thumbnail: /assets/img/posts/2022-09-04/1.jpg
+thumbnail: /assets/img/posts/2022-09-04/feat-1.jpg
 keywords: vmware
 permalink: /blog/vmware-install-esxi/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-09-04
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

@@ -5,11 +5,11 @@ summary: "Proxmox, pfsense, pihole, oh my"
 author: initcyber
 date: '2023-04-30 14:35:23 +0530'
 category: proxmox
-thumbnail: /assets/img/posts/2022-04-30/1.jpg
+thumbnail: /assets/img/posts/2022-04-30/1.png
 keywords: Network Rebuild, Proxmox, pfsense, pihole
 permalink: /blog/network-rebuild-proxmox-pfsense-pihole/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-04-30
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

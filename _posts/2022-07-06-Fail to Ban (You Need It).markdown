@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/2022-07-06/1.jpg
 keywords: Fail2Ban, SSH, Cybersecurity
 permalink: /blog/fail2ban/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-06
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

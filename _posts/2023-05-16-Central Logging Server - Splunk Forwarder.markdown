@@ -5,7 +5,7 @@ summary: "Over-Engineering your Logging systems"
 author: initcyber
 date: '2023-05-16 14:35:23 +0530'
 category: ['Splunk','SysLog', 'SIEM']
-thumbnail: /assets/img/posts/2023-05-16/1.jpg
+thumbnail: /assets/img/posts/2023-05-16/1.png
 keywords: Central Logging Server, Splunk Forwarder, SIEM
 permalink: /blog/Central-Logging-Server/
 usemathjax: true

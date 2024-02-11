@@ -5,11 +5,11 @@ summary: "To the rescue!"
 author: initcyber
 date: '2023-05-01 14:35:23 +0530'
 category: Tailscale
-thumbnail: /assets/img/posts/2023-05-01/1.jpg
+thumbnail: /assets/img/posts/2023-05-01/1.png
 keywords: Tailscale
 permalink: /blog/welcome-to-tailscale/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-05-01
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

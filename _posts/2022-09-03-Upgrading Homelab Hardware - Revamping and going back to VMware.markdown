@@ -5,11 +5,11 @@ summary: "Ok, back to VMWare"
 author: initcyber
 date: '2022-09-03 14:35:23 +0530'
 category: Homelab
-thumbnail: /assets/img/posts/2022-09-03/1.jpg
+thumbnail: /assets/img/posts/2022-09-03/1.png
 keywords: Homelab
 permalink: /blog/homelab-vmware-revamp/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-09-03
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

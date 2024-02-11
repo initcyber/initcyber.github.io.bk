@@ -5,11 +5,11 @@ summary: "How to remotely edit code files"
 author: initcyber
 date: '2022-07-20 14:35:23 +0530'
 category: VSCode
-thumbnail: /assets/img/posts/2022-07-20/1.jpg
+thumbnail: /assets/img/posts/2022-07-20/feat-1.png
 keywords: VSCode
 permalink: /blog/VSCODE-Server/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-20
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

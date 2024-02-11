@@ -5,11 +5,11 @@ summary: "You can do this too in your homelab"
 author: initcyber
 date: '2023-05-04 14:35:23 +0530'
 category: CIS
-thumbnail: /assets/img/posts/2023-05-04/1.jpg
+thumbnail: /assets/img/posts/2023-05-04/1.png
 keywords: CIS, Benchmarks
 permalink: /blog/cis-benchmarks-ubuntu/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2023-05-04
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

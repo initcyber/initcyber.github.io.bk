@@ -5,11 +5,11 @@ summary: "Crash Course Together!"
 author: initcyber
 date: '2022-07-18 14:35:23 +0530'
 category: Terraform
-thumbnail: /assets/img/posts/2022-07-18/1.jpg
+thumbnail: /assets/img/posts/2022-07-18/feat-1.png
 keywords: Terraform, CrashCourse
 permalink: /blog/terraform-pt-2/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-18
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

@@ -3,13 +3,13 @@ layout: post
 title:  "Deeper Dive into Nessus Scanning"
 summary: "Jumpstart your cybersecurity career by understanding Nessus deeper"
 author: initcyber
-date: '2023-07-07 14:35:23 +0530'
+date: '2022-07-07 14:35:23 +0530'
 category: Nessus
-thumbnail: /assets/img/posts/2022-07-07/1.jpg
+thumbnail: /assets/img/posts/2022-07-07/1.png
 keywords: Nessus
 permalink: /blog/Nessus-Deep-Dive/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-07
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

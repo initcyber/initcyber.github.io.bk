@@ -5,11 +5,11 @@ summary: "Deeper dive into Ansible"
 author: initcyber
 date: '2022-07-13 14:35:23 +0530'
 category: Ansible
-thumbnail: /assets/img/posts/2022-07-13/1.jpg
+thumbnail: /assets/img/posts/2022-07-13/feat-1.png
 keywords: Ansible
 permalink: /blog/ansible-pt-2/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-13
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

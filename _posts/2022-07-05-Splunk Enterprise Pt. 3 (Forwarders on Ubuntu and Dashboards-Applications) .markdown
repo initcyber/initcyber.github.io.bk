@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/2022-05-16/1.jpg
 keywords: Splunk, Ubuntu, Dashboards, SIEM
 permalink: /blog/Splunk-Pt-3/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-05
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

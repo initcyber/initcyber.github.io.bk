@@ -5,11 +5,11 @@ summary: "Setting up a cloud init VM"
 author: initcyber
 date: '2022-07-17 14:35:23 +0530'
 category: Terraform
-thumbnail: /assets/img/posts/2022-07-17/1.jpg
+thumbnail: /assets/img/posts/2022-07-17/feat-1.png
 keywords: Terraform, Cloud-Init
 permalink: /blog/terraform-pt1/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-17
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}

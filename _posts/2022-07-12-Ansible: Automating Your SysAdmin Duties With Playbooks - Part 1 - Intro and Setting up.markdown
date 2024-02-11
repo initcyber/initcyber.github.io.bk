@@ -5,11 +5,11 @@ summary: "Part 1 - Playbooks"
 author: initcyber
 date: '2022-07-12 14:35:23 +0530'
 category: Ansible
-thumbnail: /assets/img/posts/2022-07-12/1.jpg
+thumbnail: /assets/img/posts/2022-07-12/feat-1.png
 keywords: Ansible, Automation, SysAdmin
 permalink: /blog/ansible-automation-pt1/
 usemathjax: true
-imgdate: 2023-11-21
+imgdate: 2022-07-12
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
