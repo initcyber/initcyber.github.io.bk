@@ -5,7 +5,7 @@ summary: "Easy to use, quick to deploy, another layer of safety"
 author: initcyber
 date: '2022-07-06 14:35:23 +0530'
 category: Fail2Ban
-thumbnail: /assets/img/posts/2022-07-06/1.jpg
+thumbnail: /assets/img/posts/2022-07-06/feat-1.png
 keywords: Fail2Ban, SSH, Cybersecurity
 permalink: /blog/fail2ban/
 usemathjax: true

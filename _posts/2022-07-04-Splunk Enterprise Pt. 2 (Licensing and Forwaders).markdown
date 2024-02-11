@@ -5,7 +5,7 @@ summary: "Continuing on with Splunk Enterprise"
 author: initcyber
 date: '2022-07-04 14:35:23 +0530'
 category: Splunk
-thumbnail: /assets/img/posts/2022-07-04/1.jpg
+thumbnail: /assets/img/posts/2022-07-04/feat-1.png
 keywords: Splunk
 permalink: /blog/Splunk-Pt-2/
 usemathjax: true

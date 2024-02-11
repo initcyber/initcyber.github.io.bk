@@ -5,7 +5,7 @@ summary: "Splunk is best known for monitoring, searching through, analyzing, and
 author: initcyber
 date: '2022-07-03 14:35:23 +0530'
 category: Splunk
-thumbnail: /assets/img/posts/2022-07-03/1.jpg
+thumbnail: /assets/img/posts/2022-07-03/feat-1.png
 keywords: Splunk
 permalink: /blog/Splunk-Pt-1/
 usemathjax: true

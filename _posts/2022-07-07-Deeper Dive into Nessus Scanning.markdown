@@ -5,7 +5,7 @@ summary: "Jumpstart your cybersecurity career by understanding Nessus deeper"
 author: initcyber
 date: '2022-07-07 14:35:23 +0530'
 category: Nessus
-thumbnail: /assets/img/posts/2022-07-07/1.png
+thumbnail: /assets/img/posts/2022-07-07/feat-1.png
 keywords: Nessus
 permalink: /blog/Nessus-Deep-Dive/
 usemathjax: true
