@@ -1,8 +1,8 @@
 ---
 name: Justin Johnson
 username: initcyber
-bio: "Hi I a John, a Web Developer and Designer."
-site: http://www.initcyber.com
+bio: "Hi I a Justin, a Cybersecurity Engineer and Avid Homelabber."
+site: https://www.initcyber.com
 avatar: profile.png
 email: justin@initcyber.com
 social:
