@@ -4,7 +4,7 @@ title: "AI in the HomeLab"
 summary: "AI and Large Language Models isn't just for ChatGPT"
 author: initcyber
 date: '2024-06-27 18:30:23 +0530'
-category: ['Intro','ELK', 'SIEM']
+category: ['AI','OpenAI', 'OpenWebUI']
 tags: ai, llm, 
 thumbnail: /assets/img/posts/2024-06-27/Thumbnail.png
 keywords: ai, homelab, llm, langchain, new
