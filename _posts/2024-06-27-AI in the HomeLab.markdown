@@ -47,7 +47,8 @@ In your User Profile in Windows, create a .wslconfig file and input:
 networkingMode = mirrored
 ```
 
-Or let me as Llama3:
+Or let me ask Llama3:
+
 ![AI doing some work](/assets/img/posts/{{page.imgdate}}/3.png){:data-align="center"}
 
 Now I should be able to see Ollama at my Laptop's Network address (in this case 172.16.100.10) using port 11343
