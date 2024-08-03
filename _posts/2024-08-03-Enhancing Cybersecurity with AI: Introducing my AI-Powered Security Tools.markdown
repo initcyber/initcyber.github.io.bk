@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Enhancing Cybersecurity with AI: Introducing my AI-PoIred Security Tools"
+title: "Enhancing Cybersecurity with AI: Introducing my AI-Powered Security Tools"
 summary: "There are multiple ways to use cybersecurity tools and AI, choose your path."
 author: initcyber
 date: '2024-08-03 06:30:23 +0530'
