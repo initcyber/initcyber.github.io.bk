@@ -31,7 +31,7 @@ author_email: "justin@initcyber.com"
 author_location: Atlanta, GA
 author_website_url: "https://www.initcyber.com"
 typewrite-text: Hi, my name is Justin Johnson. I code random things in Python, Powershell, Bash, and use Ansible to automate unncessary tasks.
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+hero_cover_img: background.png # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
